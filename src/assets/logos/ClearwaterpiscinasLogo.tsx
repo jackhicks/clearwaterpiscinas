@@ -1,4 +1,4 @@
-export const ReaktorLogo = () => {
+export const ClearwaterpiscinasLogo = () => {
   return (
   <div >
     <title>Logo</title>

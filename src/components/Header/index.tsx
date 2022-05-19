@@ -1,5 +1,5 @@
 import { useContext, useMemo, useRef } from 'react';
-import { ReaktorLogo } from '../../assets/logos/ReaktorLogo';
+import { ClearwaterpiscinasLogo } from '../../assets/logos/ClearwaterpiscinasLogo';
 import { ScrollContext } from '../../contexts/ScrollContext';
 import { useTheme } from '../../hooks/useTheme';
 import { navbarItems } from '../../utils/navbarContent';
@@ -30,7 +30,7 @@ export const Header = () => {
         Clear water piscinas
       </a>
       <a href="/">
-        <ReaktorLogo />
+        <ClearwaterpiscinasLogo />
       </a>
       <nav>
         <ul className="flex gap-4">
