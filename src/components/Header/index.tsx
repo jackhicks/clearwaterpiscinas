@@ -1,9 +1,11 @@
 import { useContext, useMemo, useRef } from 'react';
+import { Link } from "react-router-dom";
 import { ClearwaterpiscinasLogo } from '../../assets/logos/ClearwaterpiscinasLogo';
 import { ScrollContext } from '../../contexts/ScrollContext';
 import { useTheme } from '../../hooks/useTheme';
 import { navbarItems } from '../../utils/navbarContent';
 import { AnimatedTitle } from '../AnimatedTitle';
+import { TextContent } from '../../utils/TextContent';
 
 export const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
@@ -27,20 +29,19 @@ export const Header = () => {
         href="/"
         className="font-bold text-xl leading-6 px-8 dark:text-white text-gray-200"
       >
-        Clear water piscinas
+       {TextContent.CompanyName}
       </a>
       <a href="/">
         <ClearwaterpiscinasLogo />
       </a>
       <nav>
+        
+      
         <ul className="flex gap-4">
           {navbarItems.map(item => (
-            <li
-              key={item.title}
-              className="font-medium dark:text-white text-gray-200"
-            >
+            <Link to={item.path} className="font-medium dark:text-white text-gray-200"> 
               <AnimatedTitle first={item.first} second={item.second} />
-            </li>
+            </Link>      
           ))}
         </ul>
       </nav>
