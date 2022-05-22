@@ -11,6 +11,9 @@ import Services from './routes/Services';
 import About from './routes/About';
 import Careers from './routes/Careers';
 import Products from './routes/Products';
+import PrivacyPolicy from './routes/PrivacyPolicy';
+import CookieSettings from './routes/CookieSettings';
+import PartnerContact from './routes/PartnerContact';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +24,9 @@ ReactDOM.render(
         <Route path="/Products" element={<Products />} />
         <Route path="/About" element={<About />} />     
         <Route path="/Careers" element={<Careers />} />  
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />     
+        <Route path="/CookieSettings" element={<CookieSettings />} />  
+        <Route path="/PartnerContact" element={<PartnerContact />} />  
         <Route
           path="*"
           element={
