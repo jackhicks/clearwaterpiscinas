@@ -1,12 +1,12 @@
 import { useTheme } from '../../hooks/useTheme';
 import { Button } from '../Button';
-import { TextContent } from '../../utils/TextContent';
+import { TextContent } from '../../content/text';
 
 export const Hero = () => {
   const { setTheme, colorTheme } = useTheme();
   return (
     <>
-      <section className="w-full h-full bg-white dark:bg-gray-200 pl-[30rem] pr-20 py-36 text-gray-200 dark:text-white transition-colors">
+      <section className="w-full h-full bg-white dark:bg-gray-200 pl-[10%] pr-20 py-36 text-gray-200 dark:text-white transition-colors">
         <h1 className="text-[3.2rem] font-medium leading-[70px] mb-16">
           {TextContent.CompanyMission}
         </h1>

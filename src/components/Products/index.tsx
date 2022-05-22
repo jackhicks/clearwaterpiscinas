@@ -1,16 +1,15 @@
 import { RiExternalLinkLine } from 'react-icons/ri';
-import { mainContentItems } from '../../content/main';
+import { ProductContentItems } from '../../content/products';
 
-
-export const Main = () => {
+export const Products = () => {
   return (
     <main className="grid grid-cols-3 justify-center px-16 gap-16 dark:bg-gray-200 dark:text-white transition-colors bg-white">
-      {mainContentItems.map(item => (
+      {ProductContentItems.map(item => (
         <div
           className="h-[600px] flex flex-col justify-end gap-4 cursor-pointer"
           key={item.description}
-        >
-          <div className="flex items-start">
+        >         
+         <div className="flex items-start">
             <h3 className="mb-4 text-gray-100 font-serif" title={item.description}> {item.title} </h3>
               <RiExternalLinkLine
                 size={20}

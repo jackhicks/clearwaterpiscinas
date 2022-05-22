@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { ClearwaterpiscinasLogo } from '../../assets/logos/ClearwaterpiscinasLogo';
 import { ScrollContext } from '../../contexts/ScrollContext';
 import { useTheme } from '../../hooks/useTheme';
-import { navbarItems } from '../../utils/navbarContent';
+import { navbarItems } from '../../content/navbar';
 import { AnimatedTitle } from '../AnimatedTitle';
-import { TextContent } from '../../utils/TextContent';
+import { TextContent } from '../../content/text';
 
 export const Header = () => {
   const headerRef = useRef<HTMLElement>(null);

@@ -5,6 +5,7 @@ import { Form } from './components/Form';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Main } from './components/Main';
+import { TextContent } from './content/text'
 import { SouthPole } from './components/SouthPole';
 import ScrollObserver from './contexts/ScrollContext';
 
@@ -13,11 +14,10 @@ function App() {
     <ScrollObserver>
       <Header />
       <Hero />
-      <Main />
-      <section className="w-full h-full pl-[40rem] pr-20 py-36">
+      <Main />      
+      <section className="w-full h-full bg-white dark:bg-gray-200 pl-[10%] pr-20 py-36 text-gray-200 dark:text-white transition-colors">
         <h1 className="text-5xl font-medium leading-[70px] mb-8">
-          We make future products and services, and help our clients adapt and
-          remain ahead in an increasingly complex world.
+          {TextContent.CompanyGoal}
         </h1>
         <a
           href="/"
