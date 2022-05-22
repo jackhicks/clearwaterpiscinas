@@ -11,7 +11,7 @@ export const Form = () => {
           className="w-full"
         />
       </section>
-      <section className="w-full h-full pl-[40rem] pr-20 py-36">
+      <section className="w-full h-full pl-[10%] pr-20 py-36">
         <h1 className="text-5xl font-medium leading-[70px] mb-8">
           Sign up for our newsletter
         </h1>

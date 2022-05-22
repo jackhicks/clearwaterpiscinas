@@ -4,13 +4,13 @@ import {
   RiLinkedinBoxFill,
   RiTwitterFill,
 } from 'react-icons/ri';
-import { address } from '../../utils/Address';
+import { address } from '../../content/addresses';
 
 export const Footer = () => {
   return (
     <section className="pl-16 flex w-full flex-[2 1] mt-32 pb-20">
       <div className="w-1/3">
-        <h1 className="mb-4">New business?</h1>
+        <h1 className="mb-4">Want to be a partner?</h1>
         <a href="/PartnerContact" className="text-orange-100 hover:underline">
           Get in touch
         </a>

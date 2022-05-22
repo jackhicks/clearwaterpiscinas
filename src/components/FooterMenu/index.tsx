@@ -1,4 +1,4 @@
-import { navbarItems } from '../../utils/navbarContent';
+import { navbarItems } from '../../content/navbar';
 import { Link } from "react-router-dom";
 import { AnimatedTitle } from '../AnimatedTitle';
 
