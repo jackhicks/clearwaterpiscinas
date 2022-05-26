@@ -19,12 +19,6 @@ function App() {
         <h1 className="text-5xl font-medium leading-[70px] mb-8">
           {TextContent.CompanyGoal}
         </h1>
-        <a
-          href="/"
-          className="hover:text-orange-100 text-gray-100 transition-colors"
-        >
-          <h2 className=" text-2xl mb-8">See all work</h2>
-        </a>
       </section>
       <Clients />
       {/*<Form />
