@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/global.css';
 import App from './App';
 import Services from './routes/Services';
@@ -17,16 +13,17 @@ import PartnerContact from './routes/PartnerContact';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter> 
-    <Routes>
-      <Route path="" element={<App />} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/*" element={<About />} />
+        {/*
+        <Route path="" element={<App />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/Products" element={<Products />} />
-        <Route path="/About" element={<About />} />     
-        <Route path="/Careers" element={<Careers />} />  
-        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />     
-        <Route path="/CookieSettings" element={<CookieSettings />} />  
-        <Route path="/PartnerContact" element={<PartnerContact />} />  
+        <Route path="/Careers" element={<Careers />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/CookieSettings" element={<CookieSettings />} />
+        <Route path="/PartnerContact" element={<PartnerContact />} />
         <Route
           path="*"
           element={
@@ -35,7 +32,8 @@ ReactDOM.render(
             </main>
           }
         />     
-      </Routes>     
+        */}
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
