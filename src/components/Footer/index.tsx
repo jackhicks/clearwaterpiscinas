@@ -8,54 +8,56 @@ import { address } from '../../content/addresses';
 
 export const Footer = () => {
   return (
-    <section className="pl-16 flex w-full flex-[2 1] mt-8 pb-20">
-      <div className="w-1/3 md:flex-col">
-        <h1 className="mb-4">Want to be a partner?</h1>
-        <a href="/PartnerContact" className="text-orange-100 hover:underline">
-          Get in touch
-        </a>
-      </div>
-      <div className="w-[60%]">
-        <div className="grid grid-cols-4 gap-16  md:flex-col ">
+    <section className=" mt-8 pb-20">
+      <div>
+        <h2 className="flex justify-center">Location contacts:</h2>
+        <div className="flex justify-center ">
           {address.map(address => (
             <div className="text-sm" key={address.city}>
-              <h1
-                className={`${
-                  address.title === 'Chiclana' &&
-                  'underline cursor-pointer'
-                } mb-4 text-lg font-medium`}
-              >
+              <h1 className="m-4 text-lg font-medium underline">
                 {address.title}
               </h1>
+              {/*
               <p className="font-serif text-gray-200">{address.street}</p>
               <p className="font-serif text-gray-200">{address.complement}</p>
               <p className="font-serif text-gray-200">{address.city}</p>
               <p className="font-serif text-gray-200">{address.country}</p>
+              */}
+              <p className="font-serif text-gray-200">
+                {address.contactPerson}
+              </p>
               <p className="font-serif text-gray-200">{address.phone}</p>
             </div>
           ))}
         </div>
-        <div className="w-full flex gap-3 pt-20 pb-10">
-          <a className="hover:bg-gray-200 p-2 rounded-full bg-gray-100 text-white" target="_blank" href='https://www.instagram.com/clearskypiscinas'>
-            <RiFacebookBoxFill size={35}  />
+        <div className="flex justify-center pt-10 pb-10">
+          <a
+            className="hover:bg-gray-200 p-2 rounded-full bg-gray-100 text-white"
+            target="_blank"
+            href="https://www.facebook.com/clearwaterpiscinas.es"
+          >
+            <RiFacebookBoxFill size={35} />
           </a>
-          <a className="hover:bg-gray-200 p-2 rounded-full bg-gray-100 text-white"  target="_blank" href='https://www.instagram.com/clearskypiscinas'>
-            <RiLinkedinBoxFill size={35}/>
-          </a>
-          <a className="hover:bg-gray-200 p-2 rounded-full bg-gray-100 text-white"  target="_blank" href='https://www.instagram.com/clearskypiscinas'>
-            <RiInstagramFill size={35}/>
+          <a
+            className="hover:bg-gray-200 p-2 rounded-full bg-gray-100 text-white"
+            target="_blank"
+            href="https://www.instagram.com/clearskypiscinas"
+          >
+            <RiInstagramFill size={35} />
           </a>
         </div>
-        <div>
+        <div className="flex justify-center">
           <p className="text-xs text-gray-150 max-w-2xl leading-5">
-            (C) 2022 Clear water piscinas.  
+            (C) 2022 Clear water piscinas.
+            {/*
             <a href="/PrivacyPolicy" className="underline">
-             Privacy policy 
+            Privacy policy
             </a>
             /
             <a href="/CookieSettings" className="underline">
-             Cookie Settings 
+            Cookie Settings
             </a>
+            */}
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { useContext, useMemo, useRef } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { ClearwaterpiscinasLogo } from '../../assets/logos/ClearwaterpiscinasLogo';
 import { ScrollContext } from '../../contexts/ScrollContext';
 import { useTheme } from '../../hooks/useTheme';
@@ -29,8 +29,9 @@ export const Header = () => {
         href="/"
         className="font-bold text-xl leading-6 px-8 dark:text-white text-gray-200"
       >
-       {TextContent.CompanyName}
+        {TextContent.CompanyName}
       </a>
+      {/*
       <a href="/">
         <ClearwaterpiscinasLogo />
       </a>
@@ -45,6 +46,7 @@ export const Header = () => {
           ))}
         </ul>
       </nav>
+          */}
     </header>
   );
 };

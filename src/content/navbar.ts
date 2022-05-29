@@ -1,5 +1,11 @@
 export const navbarItems = [
   {
+    title: 'About',
+    path: '/About',
+    first: 'Ab',
+    second: 'out',
+  } /*,
+  {
     title: 'Services',
     path:"/Services",
     first: 'Ser',
@@ -12,15 +18,9 @@ export const navbarItems = [
     second: 'ucts',
   },
   {
-    title: 'About',
-    path:"/About",
-    first: 'Ab',
-    second: 'out'
-  },/*
-  {
     title: 'Careers',
     path:"/Careers",
     first: 'Car',
     second: 'eers',
-  }*/
+  }*/,
 ];
