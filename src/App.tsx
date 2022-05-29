@@ -15,14 +15,13 @@ function App() {
       <Header />
       <Hero />
       <Main />      
-      <section className="w-full h-full bg-white dark:bg-gray-200 pl-[10%] pr-20 py-36 text-gray-200 dark:text-white transition-colors">
+      <section className="w-full h-full bg-white pl-[10%] pr-20 py-36 text-gray-200 transition-colors">
         <h1 className="text-5xl font-medium leading-[70px] mb-8">
           {TextContent.CompanyGoal}
         </h1>
       </section>
       <Clients />
-      {/*<Form />
-      <SouthPole />*/}
+      {/*<Form />*/}
       <FooterMenu />
       <Footer />
     </ScrollObserver>
