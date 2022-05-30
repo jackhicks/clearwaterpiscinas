@@ -8,7 +8,6 @@ export default function About() {
     <main>
       <ScrollObserver>
         <Header />
-
         <section className="w-full text-justify h-full bg-white pl-[10%] pr-[10%] ">
           <h2 className="text-2xl leading-[60px] text-gray-200 ">What we do</h2>
           <p>
@@ -116,7 +115,7 @@ export default function About() {
             <br />
           </p>
         </section>
-        {/*<FooterMenu />*/}
+        <FooterMenu />
         <Footer />
       </ScrollObserver>
     </main>

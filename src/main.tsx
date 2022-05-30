@@ -15,9 +15,9 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/*" element={<About />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/*" element={<App />} />
         {/*
-        <Route path="" element={<App />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/Products" element={<Products />} />
         <Route path="/Careers" element={<Careers />} />

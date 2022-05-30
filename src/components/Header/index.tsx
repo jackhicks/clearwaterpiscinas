@@ -35,18 +35,19 @@ export const Header = () => {
       <a href="/">
         <ClearwaterpiscinasLogo />
       </a>
+          */}
       <nav>
-        
-      
         <ul className="flex gap-4">
           {navbarItems.map(item => (
-            <Link to={item.path} className="font-medium dark:text-white text-gray-200"> 
+            <Link
+              to={item.path}
+              className="font-medium dark:text-white text-gray-200"
+            >
               <AnimatedTitle first={item.first} second={item.second} />
-            </Link>      
+            </Link>
           ))}
         </ul>
       </nav>
-          */}
     </header>
   );
 };
