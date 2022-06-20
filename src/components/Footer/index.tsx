@@ -1,14 +1,9 @@
-import {
-  RiFacebookBoxFill,
-  RiInstagramFill,
-  RiLinkedinBoxFill,
-  RiTwitterFill,
-} from 'react-icons/ri';
+import { RiFacebookBoxFill, RiInstagramFill } from 'react-icons/ri';
 import { address } from '../../content/addresses';
 
 export const Footer = () => {
   return (
-    <section className=" mt-8 pb-20">
+    <section className=" mt-8 pb-20 ">
       <div>
         <h2 className="flex justify-center">Location contacts:</h2>
         <div className="flex justify-center ">
@@ -27,6 +22,7 @@ export const Footer = () => {
                 {address.contactPerson}
               </p>
               <p className="font-serif text-gray-200">{address.phone}</p>
+              <p className="font-serif text-gray-200">{address.email}</p>
             </div>
           ))}
         </div>
@@ -46,7 +42,7 @@ export const Footer = () => {
             <RiInstagramFill size={35} />
           </a>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <p className="text-xs text-gray-150 max-w-2xl leading-5">
             (C) 2022 Clear water piscinas.
             {/*

@@ -1,26 +1,31 @@
 import { RiExternalLinkLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 import { ProductContentItems } from '../../content/products';
 
 export const Products = () => {
   return (
     <main className="grid grid-cols-3 justify-center px-16 gap-16 transition-colors">
       {ProductContentItems.map(item => (
-        <div
-          className="h-content mt-8 flex flex-col justify-end gap-4 cursor-pointer"
+        <Link
+          to={'/Product/' + item.pageLink}
+          className="h-content mt-8 flex flex-col justify-end gap-4 cursor-pointer hover:-translate-y-[0.30rem] "
           key={item.description}
-        >         
-         <div className="flex items-start hover:-translate-y-[0.30rem] ">
-            <h3 className="mb-4 text-gray-200 font-serif" title={item.description}> {item.title} </h3>
-              <RiExternalLinkLine
-                size={20}
-                className="flex-shrink-0 text-gray-200"
-              />
+        >
+          <div className="flex items-start">
+            <h3
+              className="mb-4 text-gray-200 font-serif"
+              title={item.description}
+            >
+              {' '}
+              {item.title}{' '}
+            </h3>
+            <RiExternalLinkLine
+              size={20}
+              className="flex-shrink-0 text-gray-200"
+            />
           </div>
-          <img
-            src={item.image}
-            className="w-48 sm:w-32 lg:w-48 hover:-translate-y-[0.30rem] transition-transform"
-          />
-        </div>
+          <img src={item.image} className="w-32 sm:w-48 transition-transform" />
+        </Link>
       ))}
     </main>
   );
