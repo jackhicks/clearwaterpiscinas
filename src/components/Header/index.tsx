@@ -1,11 +1,12 @@
 import { useContext, useMemo, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ClearwaterpiscinasLogo } from '../../assets/logos/ClearwaterpiscinasLogo';
 import { ScrollContext } from '../../contexts/ScrollContext';
 import { useTheme } from '../../hooks/useTheme';
 import { navbarItems } from '../../content/navbar';
 import { AnimatedTitle } from '../AnimatedTitle';
 import { TextContent } from '../../content/text';
+import { ClearwaterpiscinasLogo } from '../../assets/logos/ClearwaterpiscinasLogo';
+import { ClearwaterpiscinasIsotipo } from '../../assets/logos/ClearwaterpiscinasIsotipo';
 
 export const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
@@ -23,27 +24,25 @@ export const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="p-8 flex items-center justify-between bg-white dark:bg-gray-200 transition-colors"
+      className="p-8 flex flex-wrap items-center justify-between bg-white dark:bg-blue transition-colors"
     >
-      <a
-        href="/"
-        className="font-bold text-xl leading-6 px-8 dark:text-white text-gray-200"
-      >
-        {TextContent.CompanyName}
+      <a className="basis-1/2 md:basis-auto " href="/">
+        <ClearwaterpiscinasIsotipo />
       </a>
-      {/*
-      <a href="/">
+      <a
+        className="basis-1/2 flex md:flex-none flex-row-reverse md:flex-row md:basis-auto"
+        href="/"
+      >
         <ClearwaterpiscinasLogo />
       </a>
-          */}
-      <nav>
+      <nav className="basis-1 md:basis-auto ">
         <ul className="flex gap-4">
           {navbarItems.map(item => (
             <Link
-              to={item.path}
-              className="font-medium dark:text-white text-gray-200"
+              to={item?.path}
+              className="font-medium dark:text-white text-blue"
             >
-              <AnimatedTitle first={item.first} second={item.second} />
+              <AnimatedTitle first={item?.first} second={item?.second} />
             </Link>
           ))}
         </ul>
