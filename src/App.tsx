@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Hero />
       <FeatureContent />
-      <section className="w-full h-full bg-white text-gray-200 transition-colors pl-[10%] pr-20 py-24 sm:py-36">
+      <section className="w-full h-full bg-white text-blue transition-colors pl-[10%] pr-20 py-24 sm:py-36">
         <h1 className="text-2xl leading-[35px] sm:text-5xl sm:leading-[70px] font-medium  mb-16">
           {TextContent.CompanyGoal}
         </h1>

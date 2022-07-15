@@ -20,11 +20,11 @@ export const ServiceItem = () => {
                 alt="item"
               />
             </div>
-            <div className=" mb-4 flex-col basis-1/2 text-gray-200 font-serif">
-              <h1 className=" ml-8 mb-8 text-3xl text-gray-200 font-serif">
+            <div className=" mb-4 flex-col basis-1/2 text-blue font-serif">
+              <h1 className=" ml-8 mb-8 text-3xl text-blue font-serif">
                 {item.title}
               </h1>
-              <div className="mr-48 ml-8 mb-8  text-gray-200 font-serif">
+              <div className="mr-48 ml-8 mb-8  text-blue font-serif">
                 <p>{item.description}</p>
               </div>
             </div>

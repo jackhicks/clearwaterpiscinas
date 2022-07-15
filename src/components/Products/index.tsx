@@ -12,17 +12,11 @@ export const Products = () => {
           key={item.description}
         >
           <div className="flex items-start">
-            <h3
-              className="mb-4 text-gray-200 font-serif"
-              title={item.description}
-            >
+            <h3 className="mb-4 text-blue font-serif" title={item.description}>
               {' '}
               {item.title}{' '}
             </h3>
-            <RiExternalLinkLine
-              size={20}
-              className="flex-shrink-0 text-gray-200"
-            />
+            <RiExternalLinkLine size={20} className="flex-shrink-0 text-blue" />
           </div>
           <img src={item.image} className="w-32 sm:w-48 transition-transform" />
         </Link>

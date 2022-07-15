@@ -13,29 +13,27 @@ export const Footer = () => {
                 {address.title}
               </h1>
               {/*
-              <p className="font-serif text-gray-200">{address.street}</p>
-              <p className="font-serif text-gray-200">{address.complement}</p>
-              <p className="font-serif text-gray-200">{address.city}</p>
-              <p className="font-serif text-gray-200">{address.country}</p>
+              <p className="font-serif text-blue">{address.street}</p>
+              <p className="font-serif text-blue">{address.complement}</p>
+              <p className="font-serif text-blue">{address.city}</p>
+              <p className="font-serif text-blue">{address.country}</p>
               */}
-              <p className="font-serif text-gray-200">
-                {address.contactPerson}
-              </p>
-              <p className="font-serif text-gray-200">{address.phone}</p>
-              <p className="font-serif text-gray-200">{address.email}</p>
+              <p className="font-serif text-blue">{address.contactPerson}</p>
+              <p className="font-serif text-blue">{address.phone}</p>
+              <p className="font-serif text-blue">{address.email}</p>
             </div>
           ))}
         </div>
         <div className="flex justify-center pt-10 pb-10">
           <a
-            className="hover:bg-gray-200 p-2 rounded-full bg-gray-100 text-white"
+            className="hover:bg-blue p-2 rounded-full bg-gray-100 text-white"
             target="_blank"
             href="https://www.facebook.com/clearwaterpiscinas.es"
           >
             <RiFacebookBoxFill size={35} />
           </a>
           <a
-            className="hover:bg-gray-200 p-2 rounded-full bg-gray-100 text-white"
+            className="hover:bg-blue p-2 rounded-full bg-gray-100 text-white"
             target="_blank"
             href="https://www.instagram.com/clearskypiscinas"
           >
@@ -43,7 +41,7 @@ export const Footer = () => {
           </a>
         </div>
         <div className="flex justify-center ">
-          <p className="text-xs text-gray-150 max-w-2xl leading-5">
+          <p className="text-xs text-black max-w-2xl leading-5">
             (C) 2022 Clear water piscinas.
             {/*
             <a href="/PrivacyPolicy" className="underline">

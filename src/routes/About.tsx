@@ -9,7 +9,7 @@ export default function About() {
       <ScrollObserver>
         <Header />
         <section className="w-full text-justify h-full bg-white pl-[10%] pr-[10%] ">
-          <h2 className="text-2xl leading-[60px] text-gray-200 ">What we do</h2>
+          <h2 className="text-2xl leading-[60px] text-blue ">What we do</h2>
           <p>
             Here at Clear Water Pools we offer a professional cleaning and
             maintenance service for swimming pool owners in the Chiclana and
@@ -38,7 +38,7 @@ export default function About() {
           </p>
         </section>
         <section className="w-full text-justify h-full bg-white pl-[10%] pr-[10%] ">
-          <h2 className="text-2xl text-left leading-[60px] text-gray-200 ">
+          <h2 className="text-2xl text-left leading-[60px] text-blue ">
             Why should you pay to professionally maintain your pool
           </h2>
           <div className="grid grid-2">

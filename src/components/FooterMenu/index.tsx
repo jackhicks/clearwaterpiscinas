@@ -9,7 +9,7 @@ export const FooterMenu = () => {
 
       {navbarItems.length > 0
         ? navbarItems.map(item => (
-            <Link to={item.path} className="font-medium text-gray-200">
+            <Link to={item.path} className="font-medium text-blue">
               <AnimatedTitle
                 key={item.title}
                 first={item.first}

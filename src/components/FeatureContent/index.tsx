@@ -63,7 +63,7 @@ export const FeatureContent = () => {
               >
                 <div className="w-full flex justify-center ">
                   <h3
-                    className="mb-4 text-gray-200 font-serif"
+                    className="mb-4 text-blue font-serif"
                     title={item.description}
                   >
                     {' '}
@@ -71,7 +71,7 @@ export const FeatureContent = () => {
                   </h3>
                   <RiExternalLinkLine
                     size={20}
-                    className="flex-shrink-0 text-gray-200"
+                    className="flex-shrink-0 text-blue"
                   />
                 </div>
                 <div className="w-full flex justify-center ">
