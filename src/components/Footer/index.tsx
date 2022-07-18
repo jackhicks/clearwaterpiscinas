@@ -1,5 +1,6 @@
 import { RiFacebookBoxFill, RiInstagramFill } from 'react-icons/ri';
 import { address } from '../../content/addresses';
+import CookieBanner from '../CookieBanner';
 
 export const Footer = () => {
   return (
@@ -55,6 +56,7 @@ export const Footer = () => {
           </p>
         </div>
       </div>
+      <CookieBanner />
     </section>
   );
 };
