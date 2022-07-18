@@ -1,6 +1,6 @@
 import { RiExternalLinkLine } from 'react-icons/ri';
-import { ServiceContentItems } from '../../content/services';
 import { Link } from 'react-router-dom';
+import { ServiceContentItems } from '../../content/services';
 
 export const Services = () => {
   return (
