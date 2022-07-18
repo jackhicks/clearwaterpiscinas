@@ -8,8 +8,8 @@ export const ClearwaterpiscinasIsotipo = () => {
         className="max-h-[65px]"
         src={
           useTheme().colorTheme === 'dark'
-            ? 'public/clearwaterpiscinas_iso.png'
-            : 'public/clearwaterpiscinas_iso_white.png'
+            ? '/public/clearwaterpiscinas_iso.png'
+            : '/public/clearwaterpiscinas_iso_white.png'
         }
       />
     </div>
