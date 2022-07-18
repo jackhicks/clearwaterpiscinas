@@ -3,6 +3,7 @@ import { ServiceContentItems } from '../../content/services';
 import { ProductContentItems } from '../../content/products';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Link } from 'react-router-dom';
 
 const css = `
         .custom-dot-list-style{
@@ -33,7 +34,7 @@ export const FeatureContent = () => {
   ).filter(item => item.feature == true);
 
   return (
-    <main className="justify-center px-16 transition-colors bg-white">
+    <main className="justify-center p-8 transition-colors bg-white">
       <style>{css}</style>
       <Carousel
         swipeable={true}
@@ -61,25 +62,23 @@ export const FeatureContent = () => {
                 className="h-content sm:mt-8 justify-center gap-4 cursor-pointer hover:-translate-y-[0.30rem]"
                 key={item.description}
               >
-                <div className="w-full flex justify-center ">
-                  <h3
-                    className="mb-4 text-blue font-serif"
-                    title={item.description}
-                  >
-                    {' '}
-                    {item.title}{' '}
-                  </h3>
-                  <RiExternalLinkLine
-                    size={20}
-                    className="flex-shrink-0 text-blue"
-                  />
-                </div>
-                <div className="w-full flex justify-center ">
-                  <img
-                    src={item.image}
-                    className="w-32 sm:w-40 transition-transform"
-                  />
-                </div>
+                <Link to={'/' + item.type + '/' + item.pageLink}>
+                  <div className="w-full flex justify-center ">
+                    <h3
+                      className="mb-4 text-blue font-serif"
+                      title={item.description}
+                    >
+                      {' '}
+                      {item.title}{' '}
+                    </h3>
+                  </div>
+                  <div className="w-full flex justify-center ">
+                    <img
+                      src={item.image}
+                      className="w-32 sm:w-40 transition-transform"
+                    />
+                  </div>
+                </Link>
               </div>
             ))}
       </Carousel>
