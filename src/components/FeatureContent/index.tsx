@@ -1,4 +1,3 @@
-import { RiExternalLinkLine } from 'react-icons/ri';
 import { ServiceContentItems } from '../../content/services';
 import { ProductContentItems } from '../../content/products';
 import Carousel from 'react-multi-carousel';
@@ -43,7 +42,7 @@ export const FeatureContent = () => {
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
-        autoPlay={false /*this.props.deviceType !== 'mobile' ? true : false*/}
+        autoPlay={true /*this.props.deviceType !== 'mobile' ? true : false*/}
         autoPlaySpeed={2000}
         keyBoardControl={true}
         customTransition="all .5"
