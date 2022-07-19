@@ -8,8 +8,8 @@ export const ClearwaterpiscinasLogo = () => {
         className="max-w-[50px]"
         src={
           useTheme().colorTheme === 'dark'
-            ? '/public/clearwaterpiscinas.png'
-            : '/public/clearwaterpiscinas_white.png'
+            ? '/corporate/clearwaterpiscinas.png'
+            : '/corporate/clearwaterpiscinas_white.png'
         }
       />
     </div>

@@ -9,8 +9,8 @@ export const ClearwaterpiscinasImagotipo = () => {
         ]"
         src={
           useTheme().colorTheme === 'dark'
-            ? '/public/clearwaterpiscinas_imagotipo.png'
-            : '/public/clearwaterpiscinas_imagotipo_white.png'
+            ? '/corporate/clearwaterpiscinas_imagotipo.png'
+            : '/corporate/clearwaterpiscinas_imagotipo_white.png'
         }
       />
     </div>
