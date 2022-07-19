@@ -24,6 +24,8 @@ ReactDOM.render(
         <Route path="/Products" element={<Products />} />
         <Route path="/Service/:id" element={<ServiceItem />} />
         <Route path="/Services" element={<Services />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/CookieSettings" element={<CookieSettings />} />
         <Route
           path="*"
           element={
@@ -34,8 +36,6 @@ ReactDOM.render(
         />
         {/*
         <Route path="/Careers" element={<Careers />} />
-        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-        <Route path="/CookieSettings" element={<CookieSettings />} />
         <Route path="/PartnerContact" element={<PartnerContact />} />
         */}
       </Routes>
