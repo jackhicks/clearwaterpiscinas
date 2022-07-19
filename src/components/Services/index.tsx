@@ -4,11 +4,11 @@ import { ServiceContentItems } from '../../content/services';
 
 export const Services = () => {
   return (
-    <main className="grid grid-cols-2 sm:grid-cols-4 justify-center px-16 gap-16 transition-colors">
+    <main className="grid grid-cols-2 sm:grid-cols-4 justify-center bg-white px-16 gap-16 transition-colors">
       {ServiceContentItems.map(item => (
         <Link
           to={'/Service/' + item.pageLink}
-          className="h-content mt-8 flex flex-col justify-end gap-4 cursor-pointer hover:-translate-y-[0.30rem] "
+          className="h-content my-8 flex flex-col justify-end gap-4 cursor-pointer hover:-translate-y-[0.30rem] "
           key={item.description}
         >
           <div className="flex items-start">
