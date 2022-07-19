@@ -44,10 +44,10 @@ export const Footer = () => {
         <div className="flex justify-center ">
           <p className="text-xs text-black max-w-2xl leading-5">
             (C) 2022 Clear water piscinas.
-            {/*
             <a href="/PrivacyPolicy" className="underline">
-            Privacy policy
+              Privacy policy
             </a>
+            {/*
             /
             <a href="/CookieSettings" className="underline">
             Cookie Settings
