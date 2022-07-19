@@ -70,11 +70,11 @@ export const Header = () => {
           }
         >
           {navbarItems.map(item => (
-            <div>
+            <div key={item.title}>
               <Link
                 id={item?.title}
                 to={item?.path}
-                className="font-medium dark:text-white text-blue"
+                className="font-medium header-menu dark:text-white text-blue"
               >
                 <AnimatedTitle
                   title={item?.title}
@@ -90,8 +90,9 @@ export const Header = () => {
         <ul className="flex">
           {navbarItems.map(item => (
             <Link
+              key={item.title}
               to={item?.path}
-              className="menu-item font-medium dark:text-white text-blue"
+              className="menu-item font-medium header-menu dark:text-white text-blue"
             >
               <AnimatedTitle
                 title={item?.title}

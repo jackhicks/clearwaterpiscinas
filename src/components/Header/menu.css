@@ -45,13 +45,15 @@
 }
 
 .bm-item:hover {
-    border-bottom: 1px solid white;
+    box-shadow: 0px 1px 0px 0px white;
 }
 
 .menu-item {
-    margin-left: 20px;
+    margin: 20px;
 }
-
-.menu-item:hover {
-    border-bottom: 1px solid white;
+.header-menu:hover {
+    box-shadow: 0px 1px 0px 0px white;
+}
+.footer-menu:hover {
+    box-shadow: 0px 1px 0px 0px #24549b;
 }
