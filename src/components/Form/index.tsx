@@ -24,14 +24,14 @@ export const Form = () => {
         <Input label="Email" required />
         <div>
           <input type="checkbox" id="first" className="rounded" />
-          <label htmlFor="first" className="ml-5 text-gray-150 leading-7">
+          <label htmlFor="first" className="ml-5 text-black leading-7">
             Subscribe to our monthly newsletter with articles, posts, and ideas
             from us and other great sources we like. *
           </label>
         </div>
         <div>
           <input type="checkbox" id="first" className="rounded" />
-          <label htmlFor="first" className="ml-5 text-gray-150 leading-7">
+          <label htmlFor="first" className="ml-5 text-black leading-7">
             Subscribe to our newsletter for software developers. Each one is
             curated by one of Reaktor's experts.
           </label>

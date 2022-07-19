@@ -5,7 +5,7 @@ interface InputProps {
 
 export const Input = ({ label, required }: InputProps) => {
   return (
-    <div className="flex flex-col mb-8 text-gray-150">
+    <div className="flex flex-col mb-8 text-black">
       <label htmlFor={label} className="mb-2">
         {label}
         {required && '*'}

@@ -1,26 +1,26 @@
 export const navbarItems = [
   {
-    title: 'Services',
-    path:"/Services",
-    first: 'Ser',
-    second: 'vices',
+    title: 'Home',
+    path: '/Home',
+    first: 'Ho',
+    second: 'me',
+  },
+  {
+    title: 'About',
+    path: '/About',
+    first: 'Ab',
+    second: 'out',
   },
   {
     title: 'Products',
-    path:"/Products",
+    path: '/Products',
     first: 'Prod',
     second: 'ucts',
   },
   {
-    title: 'About',
-    path:"/About",
-    first: 'Ab',
-    second: 'out'
-  },/*
-  {
-    title: 'Careers',
-    path:"/Careers",
-    first: 'Car',
-    second: 'eers',
-  }*/
+    title: 'Services',
+    path: '/Services',
+    first: 'Ser',
+    second: 'vices',
+  },
 ];
