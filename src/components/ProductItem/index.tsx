@@ -9,7 +9,9 @@ export const ProductItem = () => {
 
   return (
     <>
-      <div className="bg-white">{/*         <BackButton />*/}</div>
+      <div className="bg-white">
+        <BackButton />
+      </div>
       <div className="bg-white pt-8 px-16 flex flex-col ">
         {filteredItems.length == 0 ? (
           <Navigate to="/Products" />
