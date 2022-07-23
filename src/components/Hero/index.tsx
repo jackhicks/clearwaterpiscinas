@@ -13,7 +13,7 @@ export const Hero = () => {
         {TextContent.CompanyVision}
       </h2>
       <Button
-        className="dark:text-white dark:border-white border-orange-100 text-orange-100 hover:text-white"
+        className="dark:text-white dark:border-white dark:bg-blue dark:hover:text-blue dark:hover:bg-white border-blue text-blue bg-white hover:bg-blue hover:text-white"
         onClick={() => {
           setTheme(colorTheme);
           window.location.href = 'mailto:info@clearwaterpicinas.com';
