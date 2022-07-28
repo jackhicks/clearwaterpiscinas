@@ -5,7 +5,11 @@ import 'react-multi-carousel/lib/styles.css';
 const css = `
         .custom-dot-list-style{
           position: relative;
-        } `;
+        } 
+        .custom-carousel-item{
+          margin: auto;
+        }
+        `;
 
 const responsive = {
   desktop: {
@@ -46,7 +50,7 @@ export const Clients = () => {
         removeArrowOnDeviceType={['tablet', 'mobile']}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
+        itemClass="carousel-item-padding-40-px custom-carousel-item"
         renderDotsOutside={true}
       >
         {clientLogos.map(logo => (

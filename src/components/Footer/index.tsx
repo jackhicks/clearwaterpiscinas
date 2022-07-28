@@ -20,8 +20,22 @@ export const Footer = () => {
               <p className="font-serif text-blue">{address.country}</p>
               */}
               <p className="font-serif text-blue">{address.contactPerson}</p>
-              <p><a href={"tel:"+address.phone} className="font-serif text-blue hover:underline">{address.phone}</a></p>
-              <p><a href={"mailto:"+address.email} className="font-serif text-blue hover:underline">{address.email}</a></p>
+              <p>
+                <a
+                  href={'tel:' + address.phone}
+                  className="font-serif text-blue hover:underline"
+                >
+                  {address.phone}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={'mailto:' + address.email}
+                  className="font-serif text-blue hover:underline"
+                >
+                  {address.email}
+                </a>
+              </p>
             </div>
           ))}
         </div>
@@ -36,7 +50,7 @@ export const Footer = () => {
           <a
             className="hover:bg-blue p-2 rounded-full bg-gray-100 text-white"
             target="_blank"
-            href="https://www.instagram.com/clearskypiscinas"
+            href="https://www.instagram.com/clearwaterpiscinas"
           >
             <RiInstagramFill size={35} />
           </a>

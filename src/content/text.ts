@@ -1,6 +1,9 @@
 export const TextContent = {
-    CompanyName: "Clear water piscinas",
-    CompanyMission: "A strategy, design, and technology partner for forward-thinking companies and societies.",
-    CompanyVision: "Consultancy and agency services, built on exceptional technological competence.",
-    CompanyGoal: "We make future products and services, and help our clients adapt and remain ahead in an increasingly complex world."
+  CompanyName: 'Clear water piscinas',
+  CompanyMission:
+    'A professional cleaning and maintenance service for holiday homes & residential home owners.',
+  CompanyVision:
+    'Pool care services, built on professionalism with a personal touch.',
+  CompanyGoal:
+    'We offer a personalised quality service, to maximise our clients enjoyment of their pools.',
 };
