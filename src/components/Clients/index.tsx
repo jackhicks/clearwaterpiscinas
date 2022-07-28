@@ -58,7 +58,7 @@ export const Clients = () => {
                     src={logo?.image}
                     alt={logo?.alt}
                     title={logo?.alt}
-                    className="w-32 md:w-48 select-none pointer-events-none"
+                    className="w-48 select-none pointer-events-none"
                   />
                 </a>
               </div>

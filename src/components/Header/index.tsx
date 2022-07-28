@@ -40,7 +40,7 @@ export const Header = () => {
           customBurgerIcon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="max-h-[55px] max-w-[55px] "
+              className="max-h-[45px] max-w-[45px] mt-[14px]"
               viewBox="0 0 24 24"
               stroke="white"
               strokeWidth={2}

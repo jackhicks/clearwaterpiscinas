@@ -25,7 +25,7 @@ export const ServiceItem = () => {
                 <h1 className="md:mx-8 mb-8 text-3xl text-blue font-serif">
                   {item.title}
                 </h1>
-                <div className="md:mx-8 mb-8  text-blue font-serif">
+                <div className="md:mx-8 mb-8 text-justify text-blue font-serif">
                   <p>{item.description}</p>
                 </div>
               </div>

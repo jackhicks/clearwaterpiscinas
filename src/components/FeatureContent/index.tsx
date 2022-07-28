@@ -74,7 +74,7 @@ export const FeatureContent = () => {
                   <div className="w-full flex justify-center ">
                     <img
                       src={item.image}
-                      className="w-32 sm:w-40 transition-transform"
+                      className="w-48 transition-transform"
                     />
                   </div>
                 </Link>

@@ -20,8 +20,8 @@ export const Footer = () => {
               <p className="font-serif text-blue">{address.country}</p>
               */}
               <p className="font-serif text-blue">{address.contactPerson}</p>
-              <p className="font-serif text-blue">{address.phone}</p>
-              <p className="font-serif text-blue">{address.email}</p>
+              <p><a href={"tel:"+address.phone} className="font-serif text-blue hover:underline">{address.phone}</a></p>
+              <p><a href={"mailto:"+address.email} className="font-serif text-blue hover:underline">{address.email}</a></p>
             </div>
           ))}
         </div>
