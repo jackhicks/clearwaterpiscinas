@@ -17,7 +17,10 @@ export const ServiceItem = () => {
           <Navigate to="/Services" />
         ) : (
           filteredItems.map(item => (
-            <section className="flex flex-col md:flex-row text-s font-serif">
+            <section
+              key={item.title}
+              className="flex flex-col md:flex-row text-s font-serif"
+            >
               <div className="mb-4 flex md:flex-row-reverse justify-center md:justify-start basis-full md:basis-1/2 ">
                 <img className=" max-w-[300px]" src={item.image} alt="item" />
               </div>
