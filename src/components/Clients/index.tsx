@@ -50,12 +50,9 @@ export const Clients = () => {
         renderDotsOutside={true}
       >
         {clientLogos.map(logo => (
-          <>
+          <div key={logo?.name}>
             {logo.link !== '' ? (
-              <div
-                className="h-full flex sm:my-2 justify-center cursor-pointer hover:-translate-y-[0.30rem]"
-                key={logo?.name}
-              >
+              <div className="h-full flex sm:my-2 justify-center cursor-pointer hover:-translate-y-[0.30rem]">
                 <a target="_blank" className="my-auto" href={logo?.link}>
                   <img
                     src={logo?.image}
@@ -66,19 +63,16 @@ export const Clients = () => {
                 </a>
               </div>
             ) : (
-              <div
-                className="h-full flex sm:my-2 justify-center"
-                key={logo?.name}
-              >
+              <div className="h-full flex sm:my-2 justify-center">
                 <img
                   src={logo?.image}
                   alt={logo?.alt}
                   title={logo?.alt}
-                  className="w-32 md:w-48 select-none pointer-events-none"
+                  className="w-48 select-none pointer-events-none"
                 />
               </div>
             )}
-          </>
+          </div>
         ))}
       </Carousel>
     </section>
