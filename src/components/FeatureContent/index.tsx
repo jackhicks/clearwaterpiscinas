@@ -30,7 +30,7 @@ const responsive = {
 export const FeatureContent = () => {
   const filteredFeatureContent = ServiceContentItems.concat(
     ProductContentItems,
-  ).filter(item => item.feature == true);
+  ).filter(item => item.feature == true && item.hidden == false);
 
   return (
     <main className="justify-center p-8 transition-colors bg-white">
