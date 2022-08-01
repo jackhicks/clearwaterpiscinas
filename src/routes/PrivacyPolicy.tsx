@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
 import { FooterMenu } from '../components/FooterMenu';
 import { Header } from '../components/Header';
@@ -5,6 +6,9 @@ import { privacyPolicy } from '../content/privacyPolicy';
 import ScrollObserver from '../contexts/ScrollContext';
 
 export default function PrivacyPolicy() {
+  useEffect(() => {
+    document.title = 'Clear water piscinas - Privacy Policy';
+  });
   return (
     <main>
       <ScrollObserver>

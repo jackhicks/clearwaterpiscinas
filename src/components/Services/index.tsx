@@ -1,4 +1,4 @@
-import { RiExternalLinkLine } from 'react-icons/ri';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ServiceContentItems } from '../../content/services';
 
@@ -6,6 +6,10 @@ export const Services = () => {
   const filteredServiceContent = ServiceContentItems.filter(
     item => item.hidden == false,
   );
+
+  useEffect(() => {
+    document.title = 'Clear water piscinas - Services';
+  });
 
   return (
     <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center bg-white px-16 gap-16 transition-colors">

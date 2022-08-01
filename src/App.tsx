@@ -6,8 +6,13 @@ import { Hero } from './components/Hero';
 import { FeatureContent } from './components/FeatureContent';
 import { TextContent } from './content/text';
 import ScrollObserver from './contexts/ScrollContext';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = 'Clear water piscinas - Home';
+  });
+
   return (
     <ScrollObserver>
       <Header />

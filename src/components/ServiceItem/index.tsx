@@ -1,12 +1,16 @@
 import { ServiceContentItems } from '../../content/services';
 import { useParams, Navigate } from 'react-router-dom';
 import { BackButton } from '../Button/Back';
+import { useEffect } from 'react';
 
 export const ServiceItem = () => {
   const { id } = useParams();
 
   const filteredItems = ServiceContentItems.filter(item => item.pageLink == id);
 
+  useEffect(() => {
+    document.title = 'Clear water piscinas - ' + id;
+  });
   return (
     <>
       <div className="bg-white">

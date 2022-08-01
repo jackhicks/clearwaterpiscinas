@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
 import { FooterMenu } from '../components/FooterMenu';
 import { Header } from '../components/Header';
 import ScrollObserver from '../contexts/ScrollContext';
 
 export default function About() {
+  useEffect(() => {
+    document.title = 'Clear water piscinas - About us';
+  });
   return (
     <main>
       <ScrollObserver>

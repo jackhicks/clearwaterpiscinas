@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ProductContentItems } from '../../content/products';
 
@@ -5,6 +6,11 @@ export const Products = () => {
   const filteredProductContent = ProductContentItems.filter(
     item => item.hidden == false,
   );
+
+  useEffect(() => {
+    document.title = 'Clear water piscinas - Products';
+  });
+
   return (
     <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center bg-white px-16 gap-16 transition-colors">
       {filteredProductContent.map(item => (
