@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 import './styles/global.css';
 import App from './App';
 import Services from './routes/Services';
@@ -13,7 +13,8 @@ import CookieSettings from './routes/CookieSettings';
 import PartnerContact from './routes/PartnerContact';
 import ServiceItem from './routes/ServiceItem';
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root')!);
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
@@ -41,5 +42,4 @@ ReactDOM.render(
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root'),
 );

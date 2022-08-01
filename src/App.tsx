@@ -1,12 +1,10 @@
 import { Clients } from './components/Clients';
 import { Footer } from './components/Footer';
 import { FooterMenu } from './components/FooterMenu';
-import { Form } from './components/Form';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { FeatureContent } from './components/FeatureContent';
 import { TextContent } from './content/text';
-import { SouthPole } from './components/SouthPole';
 import ScrollObserver from './contexts/ScrollContext';
 
 function App() {

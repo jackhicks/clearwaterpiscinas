@@ -1,9 +1,5 @@
-import React from 'react';
 import TagManager from 'react-gtm-module';
-import CookieConsent, {
-  Cookies,
-  getCookieConsentValue,
-} from 'react-cookie-consent';
+import CookieConsent, { getCookieConsentValue } from 'react-cookie-consent';
 
 const tagManagerArgs = {
   gtmId: 'GTM-KGCJQ9L',
