@@ -1,12 +1,12 @@
 export const SouthPole = () => {
   return (
-    <section className="w-full border-b-2 border-gray-150 bg-white py-32">
+    <section className="w-full border-b-2 border-black bg-white py-32">
       <div className="p-16 flex items-center gap-16">
         <img
           src="https://www.reaktor.com/wp-content/uploads/2021/02/CNC_label_CMYK-430x0-c-default.webp"
           alt=""
         />
-        <p className="text-sm text-gray-150 max-w-2xl">
+        <p className="text-sm text-black max-w-2xl">
           We’re not a non-profit organisation, but we are active citizens. As
           part of the process of continuously improving our responsibility, we
           collaborated with{' '}

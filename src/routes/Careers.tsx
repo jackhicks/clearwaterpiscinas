@@ -5,13 +5,13 @@ import ScrollObserver from '../contexts/ScrollContext';
 
 export default function Careers() {
   return (
-    <main style={{ padding: "1rem 0" }}>      
-    <ScrollObserver>
-      <Header />
-      <h2>Careers</h2>
-      <FooterMenu />
-      <Footer />
-    </ScrollObserver>
+    <main>
+      <ScrollObserver>
+        <Header />
+        <h2>Careers</h2>
+        <FooterMenu />
+        <Footer />
+      </ScrollObserver>
     </main>
   );
 }
