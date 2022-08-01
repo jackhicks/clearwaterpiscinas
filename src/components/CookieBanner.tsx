@@ -19,8 +19,10 @@ function CookieBanner() {
         location="bottom"
         buttonText="Accept"
         declineButtonText="Only necessary cookies"
+        overlayStyle={{
+          zIndex: '1005',
+        }}
         style={{
-          zIndex: '1001',
           fontSize: '18px',
           display: 'block',
           color: '#FFFFFF',
