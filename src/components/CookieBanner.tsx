@@ -17,9 +17,10 @@ function CookieBanner() {
       <CookieConsent
         cookieName="clearwaterpiscinasCookies"
         location="bottom"
-        buttonText="Aceptar"
-        declineButtonText="Solo las necesarias"
+        buttonText="Accept"
+        declineButtonText="Only necessary cookies"
         style={{
+          zIndex: '1001',
           fontSize: '18px',
           display: 'block',
           color: '#FFFFFF',
@@ -43,13 +44,13 @@ function CookieBanner() {
           initGA();
         }}
       >
-        Utilizamos cookies para optimizar nuestro sitio web y nuestro servicio.{' '}
+        We use cookies to optimize our website and our service.{' '}
         <a
-          href=""
+          href="/PrivacyPolicy"
           target="blank"
           style={{ fontSize: '10px', color: '#24549b' }}
         >
-          Leer más.
+          Read more.
         </a>
       </CookieConsent>
     </>
