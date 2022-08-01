@@ -57,7 +57,12 @@ export const Clients = () => {
           <div key={logo?.name}>
             {logo.link !== '' ? (
               <div className="h-full flex sm:my-2 justify-center cursor-pointer hover:-translate-y-[0.30rem]">
-                <a target="_blank" className="my-auto" href={logo?.link}>
+                <a
+                  target="_blank"
+                  id={'Clients-' + logo.name}
+                  className="my-auto"
+                  href={logo?.link}
+                >
                   <img
                     src={logo?.image}
                     alt={logo?.alt}

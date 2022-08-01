@@ -51,6 +51,7 @@ function CookieBanner() {
           href="/PrivacyPolicy"
           target="blank"
           style={{ fontSize: '10px', color: '#24549b' }}
+          id="PrivacyPolicy"
         >
           Read more.
         </a>

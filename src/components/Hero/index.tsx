@@ -13,6 +13,7 @@ export const Hero = () => {
         {TextContent.CompanyVision}
       </h2>
       <Button
+        id="contact-email"
         className="dark:text-white dark:border-white dark:bg-blue dark:hover:text-blue dark:hover:bg-white border-blue text-blue bg-white hover:bg-blue hover:text-white"
         onClick={() => {
           setTheme(colorTheme);

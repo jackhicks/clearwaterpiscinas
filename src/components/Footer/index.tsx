@@ -22,6 +22,7 @@ export const Footer = () => {
               <p className="font-serif text-blue">{address.contactPerson}</p>
               <p>
                 <a
+                  id="contact-phone"
                   href={'tel:' + address.phone}
                   className="font-serif text-blue hover:underline"
                 >
@@ -30,6 +31,7 @@ export const Footer = () => {
               </p>
               <p>
                 <a
+                  id="contact-email"
                   href={'mailto:' + address.email}
                   className="font-serif text-blue hover:underline"
                 >
@@ -41,6 +43,7 @@ export const Footer = () => {
         </div>
         <div className="flex justify-center pt-10 pb-10">
           <a
+            id="icon-facebook"
             className="hover:bg-blue p-2 rounded-full bg-gray-100 text-white"
             target="_blank"
             href="https://www.facebook.com/clearwaterpiscinas.es"
@@ -48,6 +51,7 @@ export const Footer = () => {
             <RiFacebookBoxFill size={35} />
           </a>
           <a
+            id="icon-instagram"
             className="hover:bg-blue p-2 rounded-full bg-gray-100 text-white"
             target="_blank"
             href="https://www.instagram.com/clearwaterpiscinas"
@@ -58,7 +62,7 @@ export const Footer = () => {
         <div className="flex justify-center ">
           <p className="text-xs text-black max-w-2xl leading-5">
             (C) 2022 Clear water piscinas.
-            <a href="/PrivacyPolicy" className="underline">
+            <a id="PrivacyPolicy" href="/PrivacyPolicy" className="underline">
               Privacy policy
             </a>
             {/*

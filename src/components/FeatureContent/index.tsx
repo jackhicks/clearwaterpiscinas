@@ -61,7 +61,10 @@ export const FeatureContent = () => {
                 className="h-content sm:mt-8 justify-center gap-4 cursor-pointer hover:-translate-y-[0.30rem]"
                 key={item.description}
               >
-                <Link to={'/' + item.type + '/' + item.pageLink}>
+                <Link
+                  id={'Feature-' + item.pageLink}
+                  to={'/' + item.type + '/' + item.pageLink}
+                >
                   <div className="w-full flex justify-center ">
                     <h3
                       className="mb-4 text-blue font-serif"

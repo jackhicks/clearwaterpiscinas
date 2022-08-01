@@ -9,6 +9,7 @@ export const Products = () => {
     <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center bg-white px-16 gap-16 transition-colors">
       {filteredProductContent.map(item => (
         <Link
+          id={'Product-' + item.pageLink}
           to={'/Product/' + item.pageLink}
           className="h-content my-8 justify-end cursor-pointer hover:-translate-y-[0.30rem] "
           key={item.pageLink}
