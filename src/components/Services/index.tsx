@@ -1,26 +1,33 @@
-import { RiExternalLinkLine } from 'react-icons/ri';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ServiceContentItems } from '../../content/services';
 
 export const Services = () => {
+  const filteredServiceContent = ServiceContentItems.filter(
+    item => item.hidden == false,
+  );
+
+  useEffect(() => {
+    document.title = 'Clear water piscinas - Services';
+  });
+
   return (
-    <main className="grid grid-cols-3 justify-center px-16 gap-16 transition-colors">
-      {ServiceContentItems.map(item => (
-        <div
-          className="h-content mt-8 flex flex-col justify-end gap-4 cursor-pointer"
-          key={item.description}
+    <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center bg-white px-16 gap-16 transition-colors">
+      {filteredServiceContent.map(item => (
+        <Link
+          id={'Service-' + item.pageLink}
+          to={'/Service/' + item.pageLink}
+          className="h-content my-8 justify-end cursor-pointer hover:-translate-y-[0.30rem] "
+          key={item.pageLink}
         >
           <div className="flex items-start">
-            <h3 className="mb-4 text-gray-200 font-serif" title={item.description}> {item.title} </h3>
-              <RiExternalLinkLine
-                size={20}
-                className="flex-shrink-0 text-gray-200"
-              />
+            <h3 className="mb-4 text-blue font-serif" title={item.description}>
+              {' '}
+              {item.title}{' '}
+            </h3>
           </div>
-          <img
-            src={item.image}
-            className="w-48 sm:w-32 lg:w-48 hover:-translate-y-[0.30rem] transition-transform "
-          />
-        </div>
+          <img src={item.image} className="m-auto w-48 transition-transform" />
+        </Link>
       ))}
     </main>
   );

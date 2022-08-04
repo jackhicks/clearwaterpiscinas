@@ -1,16 +1,19 @@
+import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
 import { FooterMenu } from '../components/FooterMenu';
 import { Header } from '../components/Header';
 import ScrollObserver from '../contexts/ScrollContext';
 
 export default function About() {
+  useEffect(() => {
+    document.title = 'Clear water piscinas - About us';
+  });
   return (
-    <main style={{ padding: '1rem 0' }}>
+    <main>
       <ScrollObserver>
         <Header />
-
         <section className="w-full text-justify h-full bg-white pl-[10%] pr-[10%] ">
-          <h2 className="text-2xl leading-[60px] text-gray-200 ">What we do</h2>
+          <h2 className="text-2xl leading-[60px] text-blue ">What we do</h2>
           <p>
             Here at Clear Water Pools we offer a professional cleaning and
             maintenance service for swimming pool owners in the Chiclana and
@@ -39,34 +42,37 @@ export default function About() {
           </p>
         </section>
         <section className="w-full text-justify h-full bg-white pl-[10%] pr-[10%] ">
-          <h2 className="text-2xl text-left leading-[60px] text-gray-200 ">
+          <h2 className="text-2xl text-left leading-[60px] text-blue ">
             Why should you pay to professionally maintain your pool
           </h2>
-          <p>
-            The physical cleanliness of your pool and its filtration equipment
-            is more important than you think. In fact its crucial. Why? Well
-            let’s look at two points. The physical effects and the chemical
-            implications of a dirty pool. Dirt, soil, sand etc in your pool
-            effects the pH of the water. Usually alkaline it will increase your
-            water’s pH, cause irritation to bathers, inhibit the effectiveness
-            of the chlorine and allow the water to deposit minerals and metals
-            in the pool.
-          </p>
-          <p>
-            <br />
-            <br />
-          </p>
-          <p>
-            Organic stuff, leaves and the like will leave stains on grout and
-            combine with the chlorine in the pool reducing its effectiveness to
-            kill bacteria. If you allow skimmer baskets to fill with the
-            floating detritus from the pool water’s surface it restricts flow
-            through the filter and reduces the amount of chlorine being
-            administered to the pool from the multi action tablets. Text books
-            tell us up to 80% of the pollution in pool water passes into the
-            skimmers, so they need to be clean, the filtration system will work
-            more effectively.
-          </p>
+          <div className="grid grid-2">
+            <p>
+              The physical cleanliness of your pool and its filtration equipment
+              is more important than you think. In fact its crucial. Why? Well
+              let’s look at two points. The physical effects and the chemical
+              implications of a dirty pool. Dirt, soil, sand etc in your pool
+              effects the pH of the water. Usually alkaline it will increase
+              your water’s pH, cause irritation to bathers, inhibit the
+              effectiveness of the chlorine and allow the water to deposit
+              minerals and metals in the pool.
+            </p>
+            <p>
+              <br />
+              <br />
+            </p>
+            <p>
+              Organic stuff, leaves and the like will leave stains on grout and
+              combine with the chlorine in the pool reducing its effectiveness
+              to kill bacteria. If you allow skimmer baskets to fill with the
+              floating detritus from the pool water’s surface it restricts flow
+              through the filter and reduces the amount of chlorine being
+              administered to the pool from the multi action tablets. Text books
+              tell us up to 80% of the pollution in pool water passes into the
+              skimmers, so they need to be clean, the filtration system will
+              work more effectively.
+            </p>
+          </div>
+
           <p>
             <br />
             <br />
@@ -116,7 +122,7 @@ export default function About() {
             <br />
           </p>
         </section>
-        {/*<FooterMenu />*/}
+        <FooterMenu />
         <Footer />
       </ScrollObserver>
     </main>
