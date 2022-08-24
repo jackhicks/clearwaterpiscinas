@@ -1,11 +1,13 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ServiceContentItems } from '../../content/services';
+import { useTranslation } from 'react-i18next';
 
 export const Services = () => {
   const filteredServiceContent = ServiceContentItems.filter(
     item => item.hidden == false,
   );
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     document.title = 'Clear water piscinas - Services';
@@ -19,11 +21,12 @@ export const Services = () => {
           to={'/Service/' + item.pageLink}
           className="h-content my-8 justify-end cursor-pointer hover:-translate-y-[0.30rem] "
           key={item.pageLink}
+          title={t(item.type + '.' + item.pageLink + '.description')}
         >
           <div className="flex items-start">
-            <h3 className="mb-4 text-blue font-serif" title={item.description}>
+            <h3 className="mb-4 text-blue font-serif">
               {' '}
-              {item.title}{' '}
+              {t(item.type + '.' + item.pageLink + '.title')}{' '}
             </h3>
           </div>
           <img src={item.image} className="m-auto w-48 transition-transform" />

@@ -3,11 +3,12 @@ import { ProductContentItems } from '../../content/products';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const css = `
-        .custom-dot-list-style{
-          position: relative;
-        } `;
+.custom-dot-list-style{
+  position: relative;
+} `;
 
 const responsive = {
   desktop: {
@@ -28,6 +29,7 @@ const responsive = {
 };
 
 export const FeatureContent = () => {
+  const { t, i18n } = useTranslation();
   const filteredFeatureContent = ServiceContentItems.concat(
     ProductContentItems,
   ).filter(item => item.feature == true && item.hidden == false);
@@ -59,19 +61,16 @@ export const FeatureContent = () => {
           : filteredFeatureContent.map(item => (
               <div
                 className="h-content sm:mt-8 justify-center gap-4 cursor-pointer hover:-translate-y-[0.30rem]"
-                key={item.description}
+                key={item.pageLink}
+                title={t(item.type + '.' + item.pageLink + '.description')}
               >
                 <Link
                   id={'Feature-' + item.pageLink}
                   to={'/' + item.type + '/' + item.pageLink}
                 >
                   <div className="w-full flex justify-center ">
-                    <h3
-                      className="mb-4 text-blue font-serif"
-                      title={item.description}
-                    >
-                      {' '}
-                      {item.title}{' '}
+                    <h3 className="mb-4 text-blue font-serif">
+                      {t(item.type + '.' + item.pageLink + '.title')}
                     </h3>
                   </div>
                   <div className="w-full flex justify-center ">

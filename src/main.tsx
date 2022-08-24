@@ -1,4 +1,5 @@
 import React from 'react';
+import './i18n';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 import './styles/global.css';
@@ -12,14 +13,15 @@ import PrivacyPolicy from './routes/PrivacyPolicy';
 import CookieSettings from './routes/CookieSettings';
 import PartnerContact from './routes/PartnerContact';
 import ServiceItem from './routes/ServiceItem';
+import PageNotFound from './routes/PageNotFound';
 
 const root = createRoot(document.getElementById('root')!);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path="" element={<App />} />
         <Route path="/About" element={<About />} />
-        <Route path="/" element={<App />} />
         <Route path="/Home" element={<App />} />
         <Route path="/Product/:id" element={<ProductItem />} />
         <Route path="/Products" element={<Products />} />
@@ -27,14 +29,7 @@ root.render(
         <Route path="/Services" element={<Services />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/CookieSettings" element={<CookieSettings />} />
-        <Route
-          path="*"
-          element={
-            <main style={{ padding: '1rem' }}>
-              <p>There's nothing here!</p>
-            </main>
-          }
-        />
+        <Route path="*" element={<PageNotFound />} />
         {/*
         <Route path="/Careers" element={<Careers />} />
         <Route path="/PartnerContact" element={<PartnerContact />} />

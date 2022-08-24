@@ -1,6 +1,7 @@
 import { clientLogos } from '../../content/clientLogos';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useTranslation } from 'react-i18next';
 
 const css = `
         .custom-dot-list-style{
@@ -29,10 +30,12 @@ const responsive = {
   },
 };
 
-export const Clients = () => {
+export const Partners = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <section className="pt-16 px-16   ">
-      <h1 className=" mb-[10px]">Partners</h1>
+      <h1 className=" mb-[10px]">{t('Sections.Partners')}</h1>
       <style>{css}</style>
       <Carousel
         swipeable={true}
