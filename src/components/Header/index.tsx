@@ -87,7 +87,7 @@ export const Header = () => {
               </Link>
             </div>
           ))}
-          <LanguageSelector mobile={true} />
+          <LanguageSelector isMobile={true} />
         </Menu>
       </div>
       <nav className="hidden lg:flex basis-1 lg:basis-auto ">
@@ -108,7 +108,7 @@ export const Header = () => {
         </ul>
       </nav>
       <div className="hidden lg:flex basis-1/2 flex-row-reverse lg:flex-row lg:basis-auto">
-        <LanguageSelector mobile={false} />
+        <LanguageSelector isMobile={false} />
         <a href="/">
           <ClearwaterpiscinasLogo />
         </a>

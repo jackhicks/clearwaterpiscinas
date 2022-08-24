@@ -11,7 +11,7 @@ const countryList = [
 
 export interface LanguageSelectorProps
   extends React.HTMLAttributes<HTMLHeadingElement> {
-  mobile: boolean;
+  isMobile: boolean;
 }
 export const LanguageSelector = (mobile: LanguageSelectorProps) => {
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
@@ -114,8 +114,8 @@ export const LanguageSelector = (mobile: LanguageSelectorProps) => {
 
   return (
     <>
-      {LanguageDropdown(false)}
-      {LanguageList(false)}
+      {LanguageDropdown(mobile.isMobile)}
+      {LanguageList(mobile.isMobile)}
     </>
   );
 };

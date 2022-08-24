@@ -13,7 +13,7 @@ export const TRANSLATIONS_ES = {
     PrivacyPolicy: 'Política de privacidad',
   },
   Sections: {
-    LocationContacts: 'Contactos regiones:',
+    LocationContacts: 'Contactos:',
     Partners: 'Asociaciones',
   },
   AboutUs: {
