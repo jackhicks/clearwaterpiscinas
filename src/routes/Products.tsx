@@ -6,13 +6,13 @@ import ScrollObserver from '../contexts/ScrollContext';
 
 export default function products() {
   return (
-    <main style={{ padding: "1rem 0" }}>      
-    <ScrollObserver>
-      <Header />
-      <Products />
-      <FooterMenu />
-      <Footer />
-    </ScrollObserver>
+    <main>
+      <ScrollObserver>
+        <Header />
+        <Products />
+        <FooterMenu />
+        <Footer />
+      </ScrollObserver>
     </main>
   );
 }

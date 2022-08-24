@@ -7,5 +7,6 @@ export const address = [
     city: 'Chiclana de la frontera, 11130',
     country: 'Spain',
     phone: '658 38 22 37',
+    email: 'info@clearwaterpicinas.com',
   },
 ];

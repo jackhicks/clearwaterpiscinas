@@ -1,8 +1,30 @@
 export const ProductContentItems = [
   {
-    title: 'Heater pump!',
-    description:
-      'Have one of the best heaters on the market to enjoy your pool for longer',
-    image: 'Norsup_Heater.jpg',
+    image: '/content/NorsupP13X.webp',
+    pageLink: 'NorsupP13X',
+    type: 'Product',
+    feature: true,
+    hidden: false,
+  },
+  {
+    image: '/content/NorsupP13X.webp',
+    pageLink: 'NorsupP17X',
+    type: 'Product',
+    feature: false,
+    hidden: false,
+  },
+  {
+    image: '/content/NorsupP13X.webp',
+    pageLink: 'NorsupP20X',
+    type: 'Product',
+    feature: true,
+    hidden: false,
+  },
+  {
+    image: '/content/NorsupP13X.webp',
+    pageLink: 'NorsupP26X',
+    type: 'Product',
+    feature: true,
+    hidden: false,
   },
 ];
