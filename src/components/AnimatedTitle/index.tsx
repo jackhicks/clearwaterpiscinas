@@ -1,5 +1,10 @@
-import type { AnimatedTitleProps } from './types';
 import './../Header/menu.css';
+export interface AnimatedTitleProps
+  extends React.HTMLAttributes<HTMLHeadingElement> {
+  first: string;
+  second: string;
+}
+
 export const AnimatedTitle = ({
   title,
   first,

@@ -45,15 +45,49 @@
 }
 
 .bm-item:hover {
-    box-shadow: 0px 1px 0px 0px white;
+    /*box-shadow: 0px 1px 0px 0px white; */
 }
 
 .menu-item {
     margin: 20px;
 }
-.header-menu:hover {
+.header-menu span:hover {
     box-shadow: 0px 1px 0px 0px white;
 }
 .footer-menu:hover {
     box-shadow: 0px 1px 0px 0px #24549b;
+}
+
+.language-option {
+    display: block;
+    text-align: left;
+    padding: 5px;
+}
+.language-option span {
+    padding: 5px;
+}
+.language-option span:hover {
+    box-shadow: 0px 1px 0px 0px white;
+}
+
+.language-option-mobile {
+    min-height: 40px;
+    padding-left: 20px;
+    margin: 20px;
+    bottom: 0;
+        position: fixed;
+}
+
+.language-option-icon { 
+    width: 20px;
+    display: inline;
+}
+
+.language-option-selected{
+    display: flex;
+    align-items: center;
+}
+
+.language-menu-open{
+    position: absolute;
 }

@@ -8,9 +8,12 @@ import { ClearwaterpiscinasLogo } from '../../assets/logos/ClearwaterpiscinasLog
 import { ClearwaterpiscinasIsotipo } from '../../assets/logos/ClearwaterpiscinasIsotipo';
 import { ClearwaterpiscinasImagotipo } from '../../assets/logos/ClearwaterpiscinasImagotipo';
 import { slide as Menu } from 'react-burger-menu';
+import { useTranslation } from 'react-i18next';
+import { LanguageSelector } from '../LanguageSelector/LanguageSelector';
 import './menu.css';
 
 export const Header = () => {
+  const { t, i18n } = useTranslation();
   const headerRef = useRef<HTMLElement>(null);
   const { scrollY } = useContext(ScrollContext);
   const { setTheme } = useTheme();
@@ -28,13 +31,13 @@ export const Header = () => {
       ref={headerRef}
       className="p-8 flex flex-wrap items-center justify-between bg-white dark:bg-blue transition-colors"
     >
-      <a className="md:hidden basis-1/2 md:basis-auto " href="/">
+      <a className="lg:hidden basis-1/2 lg:basis-auto " href="/">
         <ClearwaterpiscinasImagotipo />
       </a>
-      <a className="hidden md:flex basis-1/2 md:basis-auto " href="/">
+      <a className="hidden lg:flex basis-1/2 lg:basis-auto " href="/">
         <ClearwaterpiscinasIsotipo />
       </a>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Menu
           right
           customBurgerIcon={
@@ -77,16 +80,17 @@ export const Header = () => {
                 className="font-medium header-menu dark:text-white text-blue"
               >
                 <AnimatedTitle
-                  title={item?.title}
+                  title={t('navbarItems.' + item?.title)}
                   first={item?.first}
                   second={item?.second}
                 />
               </Link>
             </div>
           ))}
+          <LanguageSelector mobile={true} />
         </Menu>
       </div>
-      <nav className="hidden md:flex basis-1 md:basis-auto ">
+      <nav className="hidden lg:flex basis-1 lg:basis-auto ">
         <ul className="flex">
           {navbarItems.map(item => (
             <Link
@@ -95,7 +99,7 @@ export const Header = () => {
               className="menu-item font-medium header-menu dark:text-white text-blue"
             >
               <AnimatedTitle
-                title={item?.title}
+                title={t('navbarItems.' + item?.title)}
                 first={item?.first}
                 second={item?.second}
               />
@@ -103,13 +107,12 @@ export const Header = () => {
           ))}
         </ul>
       </nav>
-
-      <a
-        className="hidden md:flex basis-1/2 flex-row-reverse md:flex-row md:basis-auto"
-        href="/"
-      >
-        <ClearwaterpiscinasLogo />
-      </a>
+      <div className="hidden lg:flex basis-1/2 flex-row-reverse lg:flex-row lg:basis-auto">
+        <LanguageSelector mobile={false} />
+        <a href="/">
+          <ClearwaterpiscinasLogo />
+        </a>
+      </div>
     </header>
   );
 };

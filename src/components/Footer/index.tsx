@@ -1,12 +1,16 @@
 import { RiFacebookBoxFill, RiInstagramFill } from 'react-icons/ri';
 import { address } from '../../content/addresses';
 import CookieBanner from '../CookieBanner';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
   return (
     <section className=" mt-8 pb-20 ">
       <div>
-        <h2 className="flex justify-center">Location contacts:</h2>
+        <h2 className="flex justify-center">
+          {t('Sections.LocationContacts')}
+        </h2>
         <div className="flex justify-center ">
           {address.map(address => (
             <div className="text-sm" key={address.city}>
@@ -63,7 +67,7 @@ export const Footer = () => {
           <p className="text-xs text-black max-w-2xl leading-5">
             (C) 2022 Clear water piscinas.
             <a id="PrivacyPolicy" href="/PrivacyPolicy" className="underline">
-              Privacy policy
+              {t('Buttons.PrivacyPolicy')}
             </a>
             {/*
             /
