@@ -23,4 +23,11 @@ export const navbarItems = [
     first: 'Ser',
     second: 'vices',
   },
+  /*,
+  {
+    title: 'Payments',
+    path: '/Payments',
+    first: 'Pay',
+    second: 'ments',
+  },*/
 ];

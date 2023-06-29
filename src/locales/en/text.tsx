@@ -76,12 +76,28 @@ export const TRANSLATIONS_EN = {
       p4: '',
     },
   },
-
+  Payments: {
+    Messages: {
+      notSaved: 'Your payment could not be saved. Please contact us. ',
+      notfound: 'We could not find a pending bill',
+      missingToken: 'Please enter a token',
+      tryAgain: 'Please try again later or contact us.',
+      somethingWentWrong: 'Something went wrong with your payment.',
+    },
+    thankYou: 'Thank you for your payment!',
+    refNumber: 'Your reference number is: ',
+    billInput: 'Please enter your bill ID:',
+    btnFind: 'Find Bill',
+    billFound: 'Bill found successfully!',
+    billId: 'Id: ',
+    billTotal: 'Total: ',
+  },
   navbarItems: {
     Home: 'Home',
     About: 'About',
     Products: 'Products',
     Services: 'Services',
+    Payments: 'Payments',
   },
   Product: {
     NorsupP13X: {

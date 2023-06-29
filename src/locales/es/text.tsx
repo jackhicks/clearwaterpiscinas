@@ -83,6 +83,7 @@ export const TRANSLATIONS_ES = {
     About: 'Sobre nosotros',
     Products: 'Productos',
     Services: 'Servicios',
+    Payments: 'Pagos',
   },
   Product: {
     NorsupP13X: {
