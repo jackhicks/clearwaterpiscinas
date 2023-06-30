@@ -15,7 +15,6 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.post('/PaymentInfo', function (req, res) {
-  console.log('PaymentInfo');
   fetch(OS_URL + '/PaymentRef', {
     headers: {
       'Content-Type': 'application/json',

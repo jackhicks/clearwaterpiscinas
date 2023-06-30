@@ -8,16 +8,20 @@ import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 import { useParams } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
-//function Payments(testToken) {
 function Payments(testToken) {
   const [token, setToken] = useState('');
-  const [paymentData, setPaymentData] = useState({});
+  const [paymentData, setPaymentData] = useState({
+    Total: null,
+    BillId: null,
+    ref: null,
+    success: null,
+  });
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   const [paymentError, setPaymentError] = useState(false);
   const [paymentRef, setPaymentRef] = useState('');
   const { t, i18n } = useTranslation();
 
-  const handleBillPaid = async () => {
+  const handleBillPaid = async gguid => {
     const url = `http://localhost:5000/PaymentInfo`;
     let config: RequestInit = {
       method: 'POST',
@@ -28,7 +32,7 @@ function Payments(testToken) {
       body: JSON.stringify({
         payment: {
           bill_otp: token,
-          payment_gguid: paymentRef,
+          payment_gguid: gguid,
         },
       }),
     };
@@ -62,13 +66,23 @@ function Payments(testToken) {
         data.Total !== null &&
         (!paymentData || (paymentData && paymentData.Total !== data.Total))
       ) {
-        setPaymentData(data);
+        setPaymentData({
+          Total: data.Total,
+          BillId: data.BillId,
+          ref: null,
+          success: null,
+        });
       }
     } else if (response.status === 404) {
       alert(t('Payments.Messages.notfound'));
     } else if (response.status === 400) {
       alert(t('Payments.Messages.notSaved'));
-      setPaymentData({});
+      setPaymentData({
+        Total: null,
+        BillId: null,
+        ref: null,
+        success: null,
+      });
       window.location.href = '/Payments';
     }
   };
@@ -97,7 +111,7 @@ function Payments(testToken) {
     };
     setPaymentSuccess(paymentData.success);
     setPaymentRef(paymentData.ref);
-    handleBillPaid();
+    handleBillPaid(paymentData.ref);
   };
   const handlePaymentError = () => {
     // Here you would make an API call to process the payment and update the state accordingly.
@@ -139,7 +153,7 @@ function Payments(testToken) {
             ) : (
               <div>Test</div>
             )}
-            {paymentData && Object.keys(paymentData).length > 0 && (
+            {paymentData.BillId != null && paymentData.Total != null && (
               <div id="billPayment">
                 <h2>{t('Payments.billFound')}</h2>
                 <p>
@@ -157,16 +171,15 @@ function Payments(testToken) {
                         purchase_units: [
                           {
                             amount: {
-                              value: paymentData.Total,
+                              value: paymentData.Total || '',
                             },
                           },
                         ],
                       });
                     }}
                     onApprove={(data, actions) => {
-                      return actions.order.capture().then(function (details) {
-                        handlePayment();
-                      });
+                      handlePayment();
+                      return Promise.resolve();
                     }}
                     onError={error => handlePaymentError()}
                   />
