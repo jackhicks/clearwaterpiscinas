@@ -28,17 +28,14 @@ function Payments(testToken) {
   };
 
   const handleBillPaid = async gguid => {
-    const url = OS_URL + '/PaymentInfo';
+    const url = OS_URL + '/PaymentRef';
 
     let config: RequestInit = {
-      mode: 'no-cors',
       method: 'POST',
       headers: REST_HEADER,
       body: JSON.stringify({
-        payment: {
           bill_otp: token,
           payment_gguid: gguid,
-        },
       }),
     };
 
