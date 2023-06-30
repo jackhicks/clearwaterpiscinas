@@ -31,7 +31,7 @@ function Payments(testToken) {
     const url = OS_URL + '/PaymentInfo';
 
     let config: RequestInit = {
-      mode: 'cors',
+      mode: 'no-cors',
       method: 'POST',
       headers: REST_HEADER,
       body: JSON.stringify({
