@@ -23,16 +23,15 @@ export const navbarItems = [
     first: 'Ser',
     second: 'vices',
   },
-  {title: 'RentalGuide',
-    path: '/RentalGuide',
-    first: 'Rental',
-    second: 'Guide',
-  },
-  /*,
+  // {title: 'RentalGuide',
+  //   path: '/RentalGuide',
+  //   first: 'Rental',
+  //   second: 'Guide',
+  // },
   {
     title: 'Payments',
     path: '/Payments',
     first: 'Pay',
     second: 'ments',
-  },*/
+  }
 ];
