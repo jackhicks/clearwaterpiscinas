@@ -11,7 +11,7 @@ export const TRANSLATIONS_EN = {
   },
   Buttons: {
     ContactUs: 'Get in touch',
-    PrivacyPolicy: 'Privacy Policy',
+    PrivacyPolicy: 'Privacy P olicy',
   },
   Sections: {
     LocationContacts: 'Locations contacts:',
