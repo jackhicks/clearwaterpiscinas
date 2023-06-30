@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "proxy": "https://personal-pqequhpw.outsystemscloud.com",
   "dependencies": {
     "@paypal/react-paypal-js": "^7.8.2",
     "@types/react-router-dom": "^5.3.3",
