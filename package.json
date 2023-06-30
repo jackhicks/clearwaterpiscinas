@@ -52,6 +52,6 @@
     "vite": "^4.2.1"
   },
   "resolutions": {
-    "@types/react": "18.0.15"
+    "@types/react": "18.2.14"
   }
 }
