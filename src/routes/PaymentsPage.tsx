@@ -20,15 +20,20 @@ function Payments(testToken) {
   const [paymentError, setPaymentError] = useState(false);
   const [paymentRef, setPaymentRef] = useState('');
   const { t, i18n } = useTranslation();
+  const OS_URL = import.meta.env.VITE_OS_URL;
+  const OS_DWP = import.meta.env.VITE_OS_DWP;
+  const REST_HEADER = {
+    'Content-Type': 'application/json',
+    Authorization: OS_DWP,
+  };
 
   const handleBillPaid = async gguid => {
-    const url = `http://localhost:5000/PaymentInfo`;
+    const url = OS_URL + '/PaymentInfo';
+
     let config: RequestInit = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json', // set the content type to JSON
-      },
       mode: 'cors',
+      method: 'POST',
+      headers: REST_HEADER,
       body: JSON.stringify({
         payment: {
           bill_otp: token,
@@ -52,11 +57,11 @@ function Payments(testToken) {
       alert(t('Payments.Messages.missingToken'));
       return;
     }
-    const url = `http://localhost:5000/BillInfo?token=${token}`;
+    const url = OS_URL + '/BillInfo?BillId=' + token;
 
     let config: RequestInit = {
       method: 'GET',
-      mode: 'cors',
+      headers: REST_HEADER,
     };
 
     const response = await fetch(url, config);
