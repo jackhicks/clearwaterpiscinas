@@ -9,8 +9,7 @@ export const clientLogos = [
     name: 'Clearskyvillas',
     alt: 'clearskyvillas.com',
     link: 'https://clearskyvillas.com',
-    image:
-      'https://clearskyvillas.com/wp-content/uploads/2015/10/light-blue-1.png',
+    image: '/business/ClearSkyVillas.png',
   },
   {
     name: 'poolservicesgroup',

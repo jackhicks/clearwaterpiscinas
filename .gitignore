@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+CWP/IP2LOCATION-ISO3166-2.CSV
+.env
+.env.DEV

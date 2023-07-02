@@ -14,3 +14,28 @@ button {
 body {
   background: #f6f7f8;
 }
+
+
+#paymentsPage button {
+margin: 5px;
+  border: 1px solid;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  color: rgb(36 84 155);
+  padding-right: 3rem;
+  border-color: rgb(36 84 155);
+  border-radius: 0.5rem;
+  --tw-text-opacity: 1;
+}
+
+#billFinder *,
+#billPayment *{
+  margin: 5px;
+}
+
+#paymentsPage h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+}
