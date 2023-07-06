@@ -34,8 +34,8 @@ function Payments(testToken) {
       method: 'POST',
       headers: REST_HEADER,
       body: JSON.stringify({
-          bill_otp: token,
-          payment_gguid: gguid,
+        bill_otp: token,
+        payment_gguid: gguid,
       }),
     };
 
@@ -200,7 +200,7 @@ export default function PaymentsPage() {
   const { token3 = 'default' } = useParams();
 
   useEffect(() => {
-    document.title = 'CWP - Payments';
+    document.title = t('titleShort') + ' - ' + 'CWP - Payments';
   });
   return (
     <main>

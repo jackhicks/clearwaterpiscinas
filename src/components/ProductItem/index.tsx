@@ -10,7 +10,7 @@ export const ProductItem = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    document.title = 'Clear water piscinas - ' + id;
+    document.title = t('titleShort') + ' - ' + id;
   });
   return (
     <>
