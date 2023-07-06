@@ -1,6 +1,7 @@
 export const TRANSLATIONS_EN = {
   'Welcome to React': 'English - Welcome to React',
   title: 'Clear Water Piscinas',
+  titleShort: 'CWP',
   Company: {
     Name: 'Clear Water Piscinas',
     Mission:
@@ -17,22 +18,22 @@ export const TRANSLATIONS_EN = {
     LocationContacts: 'Locations contacts:',
     Partners: 'Partnerships',
   },
-  RentalGuide: {
-    title:'Rental Guide',
-    US: 'Here at Clear Water Pools we offer a professional cleaning and maintenance service for swimming pool owners in the Chiclana and Conil areas of the Costa De La Luz. We provide pool care for holiday homes & residential home owners. We carry out all the essential chemical testing and maintenance to ,keep your pool crystal clear and free from all impurities.We will take care of every facet of pool care and advise the best and most economical approach to the ongoing maintenance of your investment.',
-    WeDo: 'At Clear Water Pools we know how important the pool is to your holiday. Regular maintenance is essential to keep your pool in a clean and healthy condition at all times. We provide a quality service that is designed to meet individual customer and pool needs. Every aspect is professionally managed to ensure the highest standards are reached, and maintained.',
-    WhyPayTitle: 'Why should you pay to professionally maintain your pool?',
-    WhatWeDoTitle: 'What we do?',
-    WhyPay1:
-      'The physical cleanliness of your pool and its filtration equipment is more important than you think. In fact its crucial. Why? Well let’s look at two points. The physical effects and the chemical implications of a dirty pool. Dirt, soil, sand etc in your pool effects the pH of the water. Usually alkaline it will increase your water’s pH, cause irritation to bathers, inhibit the effectiveness of the chlorine and allow the water to deposit minerals and metals in the pool.',
-    WhyPay2:
-      'Organic stuff, leaves and the like will leave stains on grout and combine with the chlorine in the pool reducing its effectiveness to kill bacteria. If you allow skimmer baskets to fill with the floating detritus from the pool water’s surface it restricts flow through the filter and reduces the amount of chlorine being administered to the pool from the multi action tablets. Text books tell us up to 80% of the pollution in pool water passes into the skimmers, so they need to be clean, the filtration system will work more effectively.',
-    WhyPay3:
-      'A lot of pool owners neglect to clean the next filter in line in the pool’s filtration system, the pre-filter. This critical trap catches all the stuff that would damage the pump and block the sand filter system. It strains the water taken from the pool through small holes. Great, but when it blocks or fills with leaves, seeds etc this reduces the flow through the whole system. We clean all filters as part of our weekly visit. The sand filter is the heart of your pool’s cleaning system. It traps smaller particles in the pool water and ensures good water clarity. It needs to regularly cleaned. We backwash the filter when the pressure in the vessel rises or after every Hoover. If the sand becomes so dirty that it restricts the flow, again you are impeding the efficiency of the whole system.',
-    WhyPay4:
-      'Your pool water’s chemistry and the filtration equipment can only do its job when its clean and free from obstruction. Pre-empt problems by employing a regular cleaning schedule.',
-    WhyPay5:
-      'Swimming pool chemicals are vital to your pool. There are many products available used to treat swimming pool water, including sanitizers, algaecide, stabilizers, balancers and shocks. If chemicals are imbalanced, it can not only be harmful to swimmers, but also to your filtering system and the pool itself. The best way to save money is to correctly balance your pool water and use less pool chemicals. A pool should look clear and be clean to maintain appropriate levels. A correct pH level is essential. Pool chemicals are serious business! We make sure chemicals are securely stored in the proper environment. We never mix chemicals old, new, variations of the same or different types.',
+  MaintenanceInfo: {
+    title: 'Maintenance information',
+    MaintenanceInfo1:
+      'Your swimming pool operates with an automatic filtration system, filtering the pool water for selected periods throughout the day and night. Please do not touch the  filtration equipment.',
+    MaintenanceInfo2:
+      'The water is ph balanced and sanitised with slow releasing chlorine tablets.',
+    MaintenanceInfo3:
+      'If possible please shower before entering the pool. If you’re wearing sunscreen please allow time for it to absorb in your skin before swimming. Suncream and chlorine should not mix. It can create a dangerous chemical compound contributing to the possibility of skin cancer. Suncream can also cause discolouration of swim wear.',
+    MaintenanceInfo4:
+      'Your pool person maintains the swimming pool twice per week, checking chemisty and operation on one of our visits and physically cleaning the pool and controlling the water chemistry another day of the week. ',
+    MaintenanceInfo5:
+      'There is a net for your use to clear the pool of any leaves etc during your stay. ',
+    MaintenanceInfo6:
+      'The water level of the pool is important to its filtration. Ideally halfway up the skimmers. If you see the pool water level drop during your stay please top up the pool with the garden water hose.',
+    MaintenanceInfo7: 'Do not allow children to use the pool un-accompanied.',
+    QrLink: 'Share this page',
   },
   AboutUs: {
     US: 'Here at Clear Water Pools we offer a professional cleaning and maintenance service for swimming pool owners in the Chiclana and Conil areas of the Costa De La Luz. We provide pool care for holiday homes & residential home owners. We carry out all the essential chemical testing and maintenance to ,keep your pool crystal clear and free from all impurities.We will take care of every facet of pool care and advise the best and most economical approach to the ongoing maintenance of your investment.',
@@ -116,7 +117,7 @@ export const TRANSLATIONS_EN = {
     Products: 'Products',
     Services: 'Services',
     Payments: 'Payments',
-    RentalGuide: 'RentalGuide',
+    MaintenanceInfo: 'Maintenance Info',
   },
   Product: {
     NorsupP13X: {

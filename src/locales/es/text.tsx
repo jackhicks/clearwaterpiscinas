@@ -1,5 +1,7 @@
 export const TRANSLATIONS_ES = {
   'Welcome to React': 'Welcome to React',
+  title: 'Clear Water Piscinas',
+  titleShort: 'CWP',
   Company: {
     Name: 'Clear water piscinas',
     Mission:
@@ -15,6 +17,24 @@ export const TRANSLATIONS_ES = {
   Sections: {
     LocationContacts: 'Contactos:',
     Partners: 'Asociaciones',
+  },
+  MaintenanceInfo: {
+    title: 'Informacion mantenimiento',
+    MaintenanceInfo1:
+      'Su piscina funciona con un sistema de filtración automática, filtrando el agua de la piscina durante períodos seleccionados durante el día y la noche. Por favor, no toque el equipo de filtración.',
+    MaintenanceInfo2:
+      'El agua tiene un pH equilibrado y se desinfecta con tabletas de cloro lenta.',
+    MaintenanceInfo3:
+      'Si es posible, dúchese antes de entrar en la piscina. Si está usando protector solar, deje tiempo para que se absorba en su piel antes de nadar. La crema solar y el cloro no deben mezclarse. Puede crear un compuesto químico peligroso que contribuye a la posibilidad de cáncer de piel. La crema solar también puede causar decoloración de los trajes de baño. ',
+    MaintenanceInfo4:
+      'Su persona de la piscina mantiene la piscina dos veces por semana, verificando la química y el funcionamiento en una de nuestras visitas y limpiando físicamente la piscina y controlando la química del agua otro día de la semana. ',
+    MaintenanceInfo5:
+      'Hay una recogerhojas para su uso para limpiar la piscina de cualquier hoja, etc. durante su estancia.',
+    MaintenanceInfo6:
+      'El nivel del agua de la piscina es importante para su filtración. Idealmente a mitad de los skimmers. Si ve que el nivel del agua de la piscina baja durante su estancia, rellene la piscina con la manguera de agua del jardín.',
+    MaintenanceInfo7:
+      'No permita que los niños utilicen la piscina sin acompañante.',
+    QrLink: 'Comparte esta pagina',
   },
   AboutUs: {
     US: 'En Clear Water Pools ofrecemos un servicio profesional de limpieza y mantenimiento para propietarios de piscinas en las zonas de Chiclana y Conil de la Costa De La Luz. Brindamos cuidado de piscinas para casas de vacaciones y propietarios de viviendas residenciales. Realizamos todas las pruebas químicas esenciales y el mantenimiento para mantener su piscina cristalina y libre de impurezas. Nos ocuparemos de cada faceta del cuidado de la piscina y le aconsejaremos el mejor y más económico enfoque para el mantenimiento continuo de su inversión.',
@@ -84,6 +104,7 @@ export const TRANSLATIONS_ES = {
     Products: 'Productos',
     Services: 'Servicios',
     Payments: 'Pagos',
+    MaintenanceInfo: 'Info Mantenimiento',
   },
   Product: {
     NorsupP13X: {
