@@ -10,7 +10,7 @@ export const ServiceItem = () => {
   const filteredItems = ServiceContentItems.filter(item => item.pageLink == id);
 
   useEffect(() => {
-    document.title = 'Clear water piscinas - ' + id;
+    document.title = t('titleShort') + ' - ' + id;
   });
   return (
     <>

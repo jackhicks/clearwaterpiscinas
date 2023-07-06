@@ -6,7 +6,7 @@ import './styles/global.css';
 import App from './App';
 import Services from './routes/Services';
 import About from './routes/About';
-import RentalGuide from './routes/RentalGuide';
+import MaintenanceInfo from './routes/MaintenanceInfo';
 import Careers from './routes/Careers';
 import Products from './routes/Products';
 import ProductItem from './routes/ProductItem';
@@ -24,7 +24,7 @@ root.render(
       <Routes>
         <Route path="" element={<App />} />
         <Route path="/About" element={<About />} />
-        <Route path="/RentalGuide" element={<RentalGuide />} />
+        <Route path="/Guide" element={<MaintenanceInfo />} />
         <Route path="/Home" element={<App />} />
         <Route path="/Payments/:token3" element={<PaymentsPage />} />
         <Route path="/Payments" element={<PaymentsPage />} />

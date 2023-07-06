@@ -10,7 +10,7 @@ export const Services = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    document.title = 'Clear water piscinas - Services';
+    document.title = t('titleShort') + ' - ' + 'Services';
   });
 
   return (

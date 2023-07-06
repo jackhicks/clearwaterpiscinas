@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 export default function PrivacyPolicy() {
   const { t, i18n } = useTranslation();
   useEffect(() => {
-    document.title = 'Clear water piscinas - Privacy Policy';
+    document.title = t('titleShort') + ' - ' + 'Privacy Policy';
   });
   return (
     <main>

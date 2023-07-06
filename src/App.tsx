@@ -12,7 +12,7 @@ import './i18n';
 function App() {
   const { t, i18n } = useTranslation();
   useEffect(() => {
-    document.title = 'Clear water piscinas - Home';
+    document.title = t('title');
   });
 
   return (
