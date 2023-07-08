@@ -180,8 +180,15 @@ function Payments(testToken) {
                       });
                     }}
                     onApprove={(data, actions) => {
-                      handlePayment();
-                      return Promise.resolve();
+                      if (actions && actions.order) {
+                        return actions.order.capture().then(function () {
+                          // Your code here after capture the order
+                          handlePayment();
+                        });
+                      } else {
+                        handlePaymentError();
+                        return Promise.resolve();
+                      }
                     }}
                     onError={error => handlePaymentError()}
                   />
