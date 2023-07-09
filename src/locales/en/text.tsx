@@ -1,3 +1,4 @@
+import { TRANSLATIONS_EN_PRODUCTS } from './productText';
 export const TRANSLATIONS_EN = {
   'Welcome to React': 'English - Welcome to React',
   title: 'Clear Water Piscinas',
@@ -133,36 +134,7 @@ export const TRANSLATIONS_EN = {
     Payments: 'Payments',
     MaintenanceInfo: 'Maintenance Info',
   },
-  Product: {
-    NorsupP13X: {
-      title: 'Norsup P13X',
-      description:
-        'The full inverter heat pump offers the ability to vary the heating capacity to suit weather conditions. Low noise rotary compressor and low noise variable speed fan motor reduce ambient noise and energy consumption. Wi-Fi module is also included in the package.',
-      shortDescription:
-        'The full inverter heat pump offers the ability to vary the heating capacity to suit weather conditions. Low noise rotary compressor and low noise variable speed fan motor reduce ambient noise and energy consumption. Wi-Fi module is also included in the package.',
-    },
-    NorsupP17X: {
-      title: 'Norsup P17X',
-      description:
-        'The full inverter heat pump offers the ability to vary the heating capacity to suit weather conditions. Low noise rotary compressor and low noise variable speed fan motor reduce ambient noise and energy consumption. Wi-Fi module is also included in the package.',
-      shortDescription:
-        'The full inverter heat pump offers the ability to vary the heating capacity to suit weather conditions. Low noise rotary compressor and low noise variable speed fan motor reduce ambient noise and energy consumption. Wi-Fi module is also included in the package.',
-    },
-    NorsupP20X: {
-      title: 'Norsup P20X',
-      description:
-        'The full inverter heat pump offers the ability to vary the heating capacity to suit weather conditions. Low noise rotary compressor and low noise variable speed fan motor reduce ambient noise and energy consumption. Wi-Fi module is also included in the package.',
-      shortDescription:
-        'The full inverter heat pump offers the ability to vary the heating capacity to suit weather conditions. Low noise rotary compressor and low noise variable speed fan motor reduce ambient noise and energy consumption. Wi-Fi module is also included in the package.',
-    },
-    NorsupP26X: {
-      title: 'Norsup P26X',
-      description:
-        'The full inverter heat pump offers the ability to vary the heating capacity to suit weather conditions. Low noise rotary compressor and low noise variable speed fan motor reduce ambient noise and energy consumption. Wi-Fi module is also included in the package.',
-      shortDescription:
-        'The full inverter heat pump offers the ability to vary the heating capacity to suit weather conditions. Low noise rotary compressor and low noise variable speed fan motor reduce ambient noise and energy consumption. Wi-Fi module is also included in the package.',
-    },
-  },
+  Product: TRANSLATIONS_EN_PRODUCTS,
   Service: {
     PremiumMaintenance: {
       title: 'Premium maintenance',

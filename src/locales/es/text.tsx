@@ -1,3 +1,4 @@
+import { TRANSLATIONS_ES_PRODUCTS } from './productText';
 export const TRANSLATIONS_ES = {
   'Welcome to React': 'Welcome to React',
   title: 'Clear Water Piscinas',
@@ -120,36 +121,8 @@ export const TRANSLATIONS_ES = {
     Payments: 'Pagos',
     MaintenanceInfo: 'Info Mantenimiento',
   },
-  Product: {
-    NorsupP13X: {
-      title: 'Norsup P13X',
-      description:
-        'La bomba de calor de inversor completo ofrece la posibilidad de variar la capacidad de calefacción para adaptarse a las condiciones climáticas. El compresor rotativo de bajo ruido y el motor del ventilador de velocidad variable de bajo ruido reducen el ruido ambiental y el consumo de energía. El módulo Wi-Fi también está incluido en el paquete.',
-      shortDescription:
-        'La bomba de calor de inversor completo ofrece la posibilidad de variar la capacidad de calefacción para adaptarse a las condiciones climáticas. El compresor rotativo de bajo ruido y el motor del ventilador de velocidad variable de bajo ruido reducen el ruido ambiental y el consumo de energía. El módulo Wi-Fi también está incluido en el paquete.',
-    },
-    NorsupP17X: {
-      title: 'Norsup P17X',
-      description:
-        'La bomba de calor de inversor completo ofrece la posibilidad de variar la capacidad de calefacción para adaptarse a las condiciones climáticas. El compresor rotativo de bajo ruido y el motor del ventilador de velocidad variable de bajo ruido reducen el ruido ambiental y el consumo de energía. El módulo Wi-Fi también está incluido en el paquete.',
-      shortDescription:
-        'La bomba de calor de inversor completo ofrece la posibilidad de variar la capacidad de calefacción para adaptarse a las condiciones climáticas. El compresor rotativo de bajo ruido y el motor del ventilador de velocidad variable de bajo ruido reducen el ruido ambiental y el consumo de energía. El módulo Wi-Fi también está incluido en el paquete.',
-    },
-    NorsupP20X: {
-      title: 'Norsup P20X',
-      description:
-        'La bomba de calor de inversor completo ofrece la posibilidad de variar la capacidad de calefacción para adaptarse a las condiciones climáticas. El compresor rotativo de bajo ruido y el motor del ventilador de velocidad variable de bajo ruido reducen el ruido ambiental y el consumo de energía. El módulo Wi-Fi también está incluido en el paquete.',
-      shortDescription:
-        'La bomba de calor de inversor completo ofrece la posibilidad de variar la capacidad de calefacción para adaptarse a las condiciones climáticas. El compresor rotativo de bajo ruido y el motor del ventilador de velocidad variable de bajo ruido reducen el ruido ambiental y el consumo de energía. El módulo Wi-Fi también está incluido en el paquete.',
-    },
-    NorsupP26X: {
-      title: 'Norsup P26X',
-      description:
-        'La bomba de calor de inversor completo ofrece la posibilidad de variar la capacidad de calefacción para adaptarse a las condiciones climáticas. El compresor rotativo de bajo ruido y el motor del ventilador de velocidad variable de bajo ruido reducen el ruido ambiental y el consumo de energía. El módulo Wi-Fi también está incluido en el paquete.',
-      shortDescription:
-        'La bomba de calor de inversor completo ofrece la posibilidad de variar la capacidad de calefacción para adaptarse a las condiciones climáticas. El compresor rotativo de bajo ruido y el motor del ventilador de velocidad variable de bajo ruido reducen el ruido ambiental y el consumo de energía. El módulo Wi-Fi también está incluido en el paquete.',
-    },
-  },
+
+  Product: TRANSLATIONS_ES_PRODUCTS,
   Service: {
     PremiumMaintenance: {
       title: 'Mantenimiento premium',
