@@ -19,9 +19,9 @@ export const TRANSLATIONS_EN = {
   Company: {
     Name: 'Clear Water Piscinas',
     Mission:
-      'A professional cleaning and maintenance service for holiday homes & residential home owners.',
+      'A quality pool maintenance service for holiday homes & residential home owners.',
     Vision:
-      'Pool care services, built on professionalism with a personal touch.',
+      'Pool maintenance services, built on professionalism with a personal touch.',
     Goal: 'We offer a personalised quality service, to maximise our clients enjoyment of their pools.',
   },
   Buttons: {
