@@ -112,7 +112,22 @@ export const TRANSLATIONS_ES = {
       p4: '',
     },
   },
-
+  Payments: {
+    Messages: {
+      notSaved: 'Tu pago no pudo ser guardado. Por favor contacte con nosotros. ',
+      notfound: 'No encontramos ningun recibo pendiente.',
+      missingToken: 'Por favor, añada un token',
+      tryAgain: 'Por favor intentelo mas tarde o contacte con nosotros.',
+      somethingWentWrong: 'Algo ha fallado con su pago.',
+    },
+    thankYou: 'Gracias por su pago!',
+    refNumber: 'Tu numero de referencia es: ',
+    billInput: 'Por favor introduce tu número de recibo:',
+    btnFind: 'Buscar recibo',
+    billFound: 'Recibo encontrado!',
+    billId: 'Id: ',
+    billTotal: 'Total: ',
+  },
   navbarItems: {
     Home: 'Inicio',
     About: 'Sobre nosotros',
