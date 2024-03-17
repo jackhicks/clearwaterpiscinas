@@ -36,7 +36,7 @@ export const TRANSLATIONS_EN = {
     QrLink: 'Share this page',
   },
   AboutUs: {
-    US: 'Here at Clear Water Pools we offer a professional cleaning and maintenance service for swimming pool owners in the Chiclana and Conil areas of the Costa De La Luz. We provide pool care for holiday homes & residential home owners. We carry out all the essential chemical testing and maintenance to ,keep your pool crystal clear and free from all impurities.We will take care of every facet of pool care and advise the best and most economical approach to the ongoing maintenance of your investment.',
+    US: 'At Clear Water Pools, we specialize in delivering top-tier cleaning and maintenance solutions tailored for swimming pool owners across Chiclana, Conil and El Puerto de Santa María in the vibrant Costa De La Luz region. Our services cater to both holiday homes and residential properties, ensuring pristine pool conditions year-round.',
     WeDo: 'At Clear Water Pools we know how important the pool is to your holiday. Regular maintenance is essential to keep your pool in a clean and healthy condition at all times. We provide a quality service that is designed to meet individual customer and pool needs. Every aspect is professionally managed to ensure the highest standards are reached, and maintained.',
     WhyPayTitle: 'Why should you pay to professionally maintain your pool?',
     WhatWeDoTitle: 'What we do?',
