@@ -65,7 +65,7 @@ export const Footer = () => {
         </div>
         <div className="flex justify-center ">
           <p className="text-xs text-black max-w-2xl leading-5">
-            (C) 2022 Clear water piscinas.
+            (C) 2024 Cadiz Aqua Services SL.
             <a id="PrivacyPolicy" href="/PrivacyPolicy" className="underline">
               {t('Buttons.PrivacyPolicy')}
             </a>
