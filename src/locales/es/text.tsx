@@ -16,6 +16,7 @@ export const TRANSLATIONS_ES = {
     CompareOtherProducts: 'Comparacion con otros productos',
     RecommendedProducts: 'Productos recomendados',
   },
+  Price: 'Precio',
   Company: {
     Name: 'Clear water piscinas',
     Mission:
@@ -114,7 +115,8 @@ export const TRANSLATIONS_ES = {
   },
   Payments: {
     Messages: {
-      notSaved: 'Tu pago no pudo ser guardado. Por favor contacte con nosotros. ',
+      notSaved:
+        'Tu pago no pudo ser guardado. Por favor contacte con nosotros. ',
       notfound: 'No encontramos ningun recibo pendiente.',
       missingToken: 'Por favor, añada un token',
       tryAgain: 'Por favor intentelo mas tarde o contacte con nosotros.',

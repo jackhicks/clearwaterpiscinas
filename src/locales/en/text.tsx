@@ -16,6 +16,7 @@ export const TRANSLATIONS_EN = {
     CompareOtherProducts: 'Comparison with other products',
     RecommendedProducts: 'Recommended products',
   },
+  Price: 'Price',
   Company: {
     Name: 'Clear Water Piscinas',
     Mission:
