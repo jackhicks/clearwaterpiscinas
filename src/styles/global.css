@@ -15,6 +15,13 @@ body {
   background: #f6f7f8;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
 
 #paymentsPage button {
 margin: 5px;
@@ -34,8 +41,8 @@ margin: 5px;
   margin: 5px;
 }
 
-#paymentsPage h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 20px;
+.BuyPrice{
+  border-bottom: 2px solid;
+  border-color: rgb(36 84 155);
+  padding-bottom: 16px;
 }
