@@ -17,6 +17,7 @@ export const TRANSLATIONS_ES = {
     RecommendedProducts: 'Productos recomendados',
   },
   Price: 'Precio',
+  PriceEmpty: 'Contáctanos',
   Company: {
     Name: 'Clear water piscinas',
     Mission:
