@@ -50,7 +50,7 @@ export const ProductItem = () => {
                     <span className="text-2xl font-bold">
                       {item.price == 0
                         ? t('PriceEmpty')
-                        : t('Price')}: {item.price} €
+                        : t('Price') + ': ' + item.price + '€'}
                     </span>
                   </div>
                 </div>
