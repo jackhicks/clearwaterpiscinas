@@ -48,7 +48,9 @@ export const ProductItem = () => {
                   {/* Price and Buy Now Section */}
                   <div className="md:mx-8 mb-8 flex items-center space-x-4">
                     <span className="text-2xl font-bold">
-                      {t('Price')}: {item.price} €
+                      {item.price == 0
+                        ? t('PriceEmpty')
+                        : t('Price')}: {item.price} €
                     </span>
                   </div>
                 </div>

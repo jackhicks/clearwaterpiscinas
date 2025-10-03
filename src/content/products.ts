@@ -4,7 +4,7 @@ export const ProductContentItems = [
     pageLink: 'NorsupP13X',
     type: 'Product',
     category: 'Heater pump',
-    price: 2899.0,
+    price: 0,
     description:
       'Perfect for small to medium-sized pools, the Norsup P13X provides efficient and reliable heating with a compact footprint. With a power output of 13 kW, it’s designed to deliver excellent performance while keeping energy consumption low, thanks to its inverter technology and eco-friendly R32 refrigerant.',
     specifications: [
@@ -35,7 +35,7 @@ export const ProductContentItems = [
     pageLink: 'NorsupP17X',
     type: 'Product',
     category: 'Heater pump',
-    price: 3650.0,
+    price: 0,
     description:
       'Ideal for larger residential pools, the Norsup P17X offers robust performance with a 17 kW output. It features a silent operation, advanced titanium heat exchanger, and easy-to-use touch screen controls. This model is perfect for those who value efficiency and performance during longer pool seasons.',
     specifications: [
@@ -66,7 +66,7 @@ export const ProductContentItems = [
     pageLink: 'NorsupP20X',
     type: 'Product',
     category: 'Heater pump',
-    price: 3995.0,
+    price: 0,
     description:
       'The most powerful in the P-Series, the Norsup P20X delivers 20 kW of heating power, making it the best option for larger pools or commercial setups. Its inverter compressor adjusts speed for maximum efficiency, and the Wi-Fi control lets you manage pool heating remotely.',
     specifications: [
@@ -97,7 +97,7 @@ export const ProductContentItems = [
     pageLink: 'NorsupP26X',
     type: 'Product',
     category: 'Heater pump',
-    price: 4250.0, // You can adjust this price as needed
+    price: 0,
     description:
       'Designed for larger residential or commercial pools, the Norsup P26X delivers 26 kW of heating power, ensuring fast and efficient heating even in colder temperatures. Featuring a full inverter compressor and Wi-Fi control, this model offers exceptional energy savings and easy remote management. The titanium heat exchanger ensures long-lasting durability, even in saltwater pools, while the reverse cycle defrost system guarantees optimal performance year-round.',
     specifications: [
