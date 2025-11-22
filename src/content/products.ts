@@ -27,8 +27,8 @@ export const ProductContentItems = [
         value: '2 years product, 5 years compressor and heat exchanger',
       },
     ],
-    feature: true,
-    hidden: false,
+    feature: false,
+    hidden: true,
   },
   {
     image: '/content/NorsupP13X.webp',
@@ -58,8 +58,8 @@ export const ProductContentItems = [
         value: '2 years product, 5 years compressor and heat exchanger',
       },
     ],
-    feature: true,
-    hidden: false,
+    feature: false,
+    hidden: true,
   },
   {
     image: '/content/NorsupP13X.webp',
@@ -89,8 +89,8 @@ export const ProductContentItems = [
         value: '2 years product, 5 years compressor and heat exchanger',
       },
     ],
-    feature: true,
-    hidden: false,
+    feature: false,
+    hidden: true,
   },
   {
     image: '/content/NorsupP13X.webp',
@@ -120,7 +120,7 @@ export const ProductContentItems = [
         value: '2 years product, 5 years compressor and heat exchanger',
       },
     ],
-    feature: true,
-    hidden: false,
+    feature: false,
+    hidden: true,
   },
 ];

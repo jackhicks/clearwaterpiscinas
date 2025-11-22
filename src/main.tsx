@@ -26,10 +26,6 @@ root.render(
         <Route path="/About" element={<About />} />
         <Route path="/Guide" element={<MaintenanceInfo />} />
         <Route path="/Home" element={<App />} />
-        <Route path="/Payments/:token3" element={<PaymentsPage />} />
-        <Route path="/Payments" element={<PaymentsPage />} />
-        <Route path="/Product/:id" element={<ProductItem />} />
-        <Route path="/Products" element={<Products />} />
         <Route path="/Service/:id" element={<ServiceItem />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />

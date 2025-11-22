@@ -12,12 +12,6 @@ export const navbarItems = [
     second: 'out',
   },
   {
-    title: 'Products',
-    path: '/Products',
-    first: 'Prod',
-    second: 'ucts',
-  },
-  {
     title: 'Services',
     path: '/Services',
     first: 'Ser',
@@ -28,11 +22,5 @@ export const navbarItems = [
     path: '/Guide',
     first: 'Maintenance',
     second: 'Info',
-  },
-  {
-    title: 'Payments',
-    path: '/Payments',
-    first: 'Pay',
-    second: 'ments',
   },
 ];
